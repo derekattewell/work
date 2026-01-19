@@ -16,7 +16,8 @@ Or when iterating:
 
 | Version | File | Description | Status |
 |---------|------|-------------|--------|
-| v1 | `v1.md` | Initial version extracted from existing SR/ITRG template | **Active** |
+| v1 | `v1.md` | Initial version extracted from existing SR/ITRG template | Available |
+| v2 | `v2.md` | Floating elements aesthetic with pill buttons and generous spacing | **Active** |
 
 ## Creating New Versions
 
@@ -62,3 +63,4 @@ To switch which style guide is active for new template development:
 | Date | Version | Changes |
 |------|---------|---------|
 | Jan 2026 | v1 | Initial extraction from production template |
+| Jan 2026 | v2 | Floating elements aesthetic, pill buttons, larger typography, generous spacing |
