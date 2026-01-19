@@ -21,8 +21,9 @@ This document contains all functional best practices, rendering techniques, secu
 11. [Marketo Syntax](#marketo-syntax)
 12. [Accessibility](#accessibility)
 13. [Security Practices](#security-practices)
-14. [Module Naming Conventions](#module-naming-conventions)
-15. [Testing & Validation](#testing--validation)
+14. [Creating Modules vs Templates](#creating-modules-vs-templates)
+15. [Module Naming Conventions](#module-naming-conventions)
+16. [Testing & Validation](#testing--validation)
 
 ---
 
@@ -738,6 +739,76 @@ Include tracking parameters on all links:
 
 ---
 
+## Creating Modules vs Templates
+
+### When to Create What
+
+| Scenario | Create | Location |
+|----------|--------|----------|
+| Brand new email structure | Complete template | `templates/` |
+| New section for existing template | Standalone module | `modules/` |
+| Reusable component | Standalone module | `modules/` |
+| Variant of existing module | Standalone module | `modules/` |
+| One-off unique email | Complete template | `templates/` |
+
+### Standalone Module Structure
+
+Modules are self-contained `<tr>` elements that can be inserted into any template's `mktoContainer`:
+
+```html
+<tr class="mktoModule" id="unique-module-id" mktoname="Display Name">
+  <td>
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="unique-module-id-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+    <div class="unique-module-id" style="background:#fff;background-color:#fff;margin:0 auto;max-width:600px">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0;padding:24px 47px;text-align:center">
+              <!-- Module content -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+  </td>
+</tr>
+```
+
+### Module Requirements
+
+1. **Unique ID** - Must not conflict with existing modules
+2. **Self-contained** - No external CSS dependencies
+3. **Complete MSO conditionals** - All conditionals properly opened and closed
+4. **Scoped variables** - Use `mktomodulescope="true"` for module-specific variables
+
+### Adding Module Variables
+
+When a module needs editable variables (links, button text), add them to the template's `<head>`:
+
+```html
+<meta id="module-id__variable-name" class="mktoString" mktoname="Display Name" default="value" mktomodulescope="true">
+```
+
+The `mktomodulescope="true"` attribute allows the same module to be used multiple times with different values.
+
+### Module File Organization
+
+```
+modules/
+├── headers/      # Header variations
+├── content/      # Text sections, typography blocks
+├── buttons/      # CTA button modules
+├── layouts/      # Multi-column layouts
+└── utility/      # Spacers, dividers
+```
+
+See `modules/README.md` for detailed documentation.
+
+---
+
 ## Module Naming Conventions
 
 ### ID Naming Pattern
@@ -861,10 +932,16 @@ project/
 │   └── styles/
 │       ├── README.md                 (how to use versions)
 │       ├── v1.md                     (style guide v1)
-│       ├── v2.md                     (future versions...)
-│       └── ...
+│       └── ...                       (future versions)
 ├── templates/                         (complete email templates)
-├── modules/                           (reusable Marketo modules)
+│   └── README.md                     (template guidelines)
+├── modules/                           (standalone modules for insertion)
+│   ├── README.md                     (module guidelines)
+│   ├── headers/                      (header modules)
+│   ├── content/                      (content/typography modules)
+│   ├── buttons/                      (CTA button modules)
+│   ├── layouts/                      (multi-column layouts)
+│   └── utility/                      (spacers, dividers)
 ├── assets/
 │   └── images/                       (image assets)
 └── README.md                         (project overview)

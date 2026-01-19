@@ -10,45 +10,72 @@ A repository for building and managing Marketo email templates with HTML.
 │   └── styles/                        # Versioned style guides
 │       ├── README.md                  # How to use style versions
 │       └── v1.md                      # Style guide v1 (active)
-├── templates/                         # Complete email templates (to be created)
-├── modules/                           # Reusable Marketo modules (to be created)
+├── templates/                         # Complete email templates
+│   └── README.md                      # Template guidelines
+├── modules/                           # Standalone modules for insertion
+│   ├── README.md                      # Module guidelines
+│   ├── headers/                       # Header modules
+│   ├── content/                       # Content/typography modules
+│   ├── buttons/                       # CTA button modules
+│   ├── layouts/                       # Multi-column layouts
+│   └── utility/                       # Spacers, dividers
 ├── assets/
 │   └── images/                        # Image assets
 └── README.md
 ```
 
+## Workflow: Templates vs Modules
+
+| Task | What to Create | Location |
+|------|----------------|----------|
+| Brand new email structure | Complete template | `templates/` |
+| New section for existing template | Standalone module | `modules/` |
+| Reusable component | Standalone module | `modules/` |
+| Variant of existing module | Standalone module | `modules/` |
+
+### Creating a New Template
+
+1. Reference `.claude/marketo-email-development.md` for technical requirements
+2. Reference `.claude/styles/v1.md` (or specified version) for visual styles
+3. Save complete template in `templates/`
+
+### Creating a New Module
+
+1. Reference the development guide for module structure requirements
+2. Reference the style guide for component styles
+3. Save module in appropriate category folder under `modules/`
+4. Add required variables documentation
+
+See `modules/README.md` for detailed module creation guidelines.
+
 ## Development System
 
-This repository uses a two-part guide system:
+### 1. Functional Development Guide
 
-### 1. Functional Development Guide (`.claude/marketo-email-development.md`)
+**File:** `.claude/marketo-email-development.md`
 
-Covers all technical aspects of email development:
+Covers all technical aspects:
 - Document structure and required elements
 - Email client compatibility (Outlook, Gmail, Apple Mail, etc.)
 - MSO conditional comments for Outlook
 - CSS reset and client-specific fixes
 - Table-based layout patterns
-- Typography and web font loading
-- Image best practices
-- Bulletproof button patterns
-- Responsive design techniques
 - Marketo-specific syntax
-- Accessibility requirements
-- Security practices
-- Testing and validation checklist
+- Creating modules vs templates
+- Accessibility and security
+- Testing and validation
 
-### 2. Style Guides (`.claude/styles/`)
+### 2. Style Guides (Versioned)
 
-Versioned visual style definitions:
+**Directory:** `.claude/styles/`
+
+Visual style definitions:
 - Brand colors and usage
-- Typography scale (fonts, sizes, weights)
+- Typography scale
 - Spacing system
-- Layout grid and column widths
-- Border radius values
-- Component styles (buttons, dividers, etc.)
+- Layout grid
+- Component styles
 - Module catalog
-- Image assets and URLs
 
 ## Style Guide Versions
 
@@ -58,11 +85,9 @@ Versioned visual style definitions:
 
 ### Creating New Versions
 
-To iterate on styles, request a new version:
+To iterate on styles:
 
 > "Create style guide v2 based on v1 with [your changes]"
-
-Previous versions are preserved for reference or rollback.
 
 ## Quick Reference (from v1)
 
