@@ -27,11 +27,11 @@
   <![endif]-->
 
   <!--[if !mso]><!-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,italic&display=swap" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,italic&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css">
   <style type="text/css">
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,italic&display=swap);
-    @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,italic&display=swap);
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap);
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap);
   </style>
   <!--<![endif]-->
 
@@ -46,20 +46,20 @@
     @font-face {
       font-family: 'Montserrat';
       font-style: normal;
-      font-weight: 400;
-      src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-    }
-    @font-face {
-      font-family: 'Montserrat';
-      font-style: normal;
       font-weight: 500;
       src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
     }
     @font-face {
       font-family: 'Montserrat';
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
     }
     @font-face {
       font-family: 'Roboto';
@@ -111,10 +111,6 @@
       .mj-column-per-65 { width: 65% !important; max-width: 65%; }
       .mj-column-per-35 { width: 35% !important; max-width: 35%; }
       .mj-column-per-33 { width: 33.333333% !important; max-width: 33.333333%; }
-      .mj-column-per-16 { width: 16% !important; max-width: 16%; }
-      .mj-column-per-84 { width: 84% !important; max-width: 84%; }
-      .mj-column-px-194 { width: 194px !important; max-width: 194px; }
-      .mj-column-px-165 { width: 165px !important; max-width: 165px; }
     }
 
     @media screen and (min-width:480px) {
@@ -129,7 +125,7 @@
     @media only screen and (max-width:479px) {
       table.mj-full-width-mobile { width: 100% !important; }
       td.mj-full-width-mobile { width: auto !important; }
-      .mobile-padding { padding: 24px 24px !important; }
+      .mobile-padding { padding: 24px 20px !important; }
       .mobile-stack { display: block !important; width: 100% !important; }
     }
   </style>
@@ -140,25 +136,23 @@
   <meta id="copyright-year" class="mktoString" mktoname="Copyright year" default="2026">
 
   <!-- Header Variables -->
-  <meta id="header-sr__logo-href" class="mktoString" mktoname="SR Logo Link" default="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
-  <meta id="header-itrg__logo-href" class="mktoString" mktoname="ITRG Logo Link" default="https://www.infotech.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
-  <meta id="header-advisory__logo-href" class="mktoString" mktoname="Advisory Logo Link" default="https://www.infotech.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
+  <meta id="header__logo-href" class="mktoString" mktoname="Logo Link" default="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
 
   <!-- Typography Module Variables -->
   <meta id="typography__title-href" class="mktoString" mktoname="Title Link" default="#" mktomodulescope="true">
 
   <!-- Card Module Variables -->
   <meta id="card-content__title-href" class="mktoString" mktoname="Card Title Link" default="#" mktomodulescope="true">
-  <meta id="card-brand-sr__title-href" class="mktoString" mktoname="Brand Card Title Link" default="#" mktomodulescope="true">
-  <meta id="card-brand-itrg__title-href" class="mktoString" mktoname="Brand Card Title Link" default="#" mktomodulescope="true">
+  <meta id="card-brand__title-href" class="mktoString" mktoname="Brand Card Title Link" default="#" mktomodulescope="true">
+  <meta id="card-accent__title-href" class="mktoString" mktoname="Accent Card Title Link" default="#" mktomodulescope="true">
 
   <!-- Button Module Variables -->
-  <meta id="button-pill__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
-  <meta id="button-pill__button" class="mktoString" mktoname="Button Text" default="Learn More" mktomodulescope="true">
-  <meta id="button-pill-itrg__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
-  <meta id="button-pill-itrg__button" class="mktoString" mktoname="Button Text" default="Learn More" mktomodulescope="true">
-  <meta id="button-pill-outline__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
-  <meta id="button-pill-outline__button" class="mktoString" mktoname="Button Text" default="Learn More" mktomodulescope="true">
+  <meta id="button-primary__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
+  <meta id="button-primary__button" class="mktoString" mktoname="Button Text" default="Learn More" mktomodulescope="true">
+  <meta id="button-secondary__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
+  <meta id="button-secondary__button" class="mktoString" mktoname="Button Text" default="Learn More" mktomodulescope="true">
+  <meta id="button-outline__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
+  <meta id="button-outline__button" class="mktoString" mktoname="Button Text" default="Learn More" mktomodulescope="true">
 
   <!-- Two-Column Variables -->
   <meta id="two-col-text-button__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
@@ -169,12 +163,10 @@
   <!-- Card with Button Variables -->
   <meta id="card-with-button__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
   <meta id="card-with-button__button" class="mktoString" mktoname="Button Text" default="Get Started" mktomodulescope="true">
-  <meta id="card-with-button-itrg__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
-  <meta id="card-with-button-itrg__button" class="mktoString" mktoname="Button Text" default="Get Started" mktomodulescope="true">
 
   <!-- Image Module Variables -->
-  <meta id="section-image__image-href" class="mktoString" mktoname="Image Link" default="#" mktomodulescope="true">
-  <meta id="full-width-image__image-href" class="mktoString" mktoname="Image Link" default="#" mktomodulescope="true">
+  <meta id="image-rounded__image-href" class="mktoString" mktoname="Image Link" default="#" mktomodulescope="true">
+  <meta id="image-full__image-href" class="mktoString" mktoname="Image Link" default="#" mktomodulescope="true">
 
   <!-- Step Module Variables -->
   <meta id="three-col-steps__step1-href" class="mktoString" mktoname="Step 1 Link" default="#" mktomodulescope="true">
@@ -183,173 +175,35 @@
 
 </head>
 
-<body style="word-spacing:normal;background-color:#fcfcfc;margin:0;padding:48px 0">
-  <div style="background-color:#fcfcfc" lang="en" dir="auto">
+<body style="word-spacing:normal;background-color:#ffffff;margin:0;padding:48px 0">
+  <div style="background-color:#ffffff" lang="en" dir="auto">
 
-    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
       <tbody id="template" class="mktoContainer">
 
-        <!-- ==================== HEADER - SR ==================== -->
-        <tr class="mktoModule" id="header-sr" mktoname="Header - SR">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-sr-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== HEADER ==================== -->
+        <tr class="mktoModule" id="header" mktoname="Header">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="header-sr" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="header" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-px-194" style="vertical-align:middle;width:194px;"><![endif]-->
-
-                      <div class="mj-column-px-194 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:150px">
-                                        <a href="${header-sr__logo-href}" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="SoftwareReviews" src="https://info.softwarereviews.com/rs/353-GFN-093/images/sr-logo-outline-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/SR-logo-outline.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="150" height="auto">
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:310px;"><![endif]-->
-
-                      <div class="mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="right" style="font-size:0;padding:0;word-break:break-word">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:121px">
-                                        <a href="https://www.infotech.com/?utm_source=marketo&utm_medium=email" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="Info-Tech Research Group" src="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="121" height="auto">
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <!--[if mso | IE]></td></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!--[if mso | IE]></td></tr></table><![endif]-->
-          </td>
-        </tr>
-
-        <!-- ==================== HEADER - ITRG ==================== -->
-        <tr class="mktoModule" id="header-itrg" mktoname="Header - ITRG">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-itrg-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-
-            <div class="header-itrg" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
-                <tbody>
-                  <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-px-165" style="vertical-align:middle;width:165px;"><![endif]-->
-
-                      <div class="mj-column-px-165 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:121px">
-                                        <a href="${header-itrg__logo-href}" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="Info-Tech Research Group" src="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="121" height="auto">
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:339px;"><![endif]-->
-
-                      <div class="mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="right" style="font-size:0;padding:0;word-break:break-word">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:150px">
-                                        <a href="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="SoftwareReviews" src="https://info.softwarereviews.com/rs/353-GFN-093/images/sr-logo-outline-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/SR-logo-outline.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="150" height="auto">
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <!--[if mso | IE]></td></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!--[if mso | IE]></td></tr></table><![endif]-->
-          </td>
-        </tr>
-
-        <!-- ==================== HEADER - ADVISORY ==================== -->
-        <tr class="mktoModule" id="header-advisory" mktoname="Header - Advisory">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-advisory-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-
-            <div class="header-advisory" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
-                <tbody>
-                  <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:middle;width:504px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:24px 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:middle;width:520px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
                           <tbody>
                             <tr>
-                              <td align="center" style="font-size:0;padding:0;word-break:break-word">
+                              <td align="left" style="font-size:0;padding:0;word-break:break-word">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
                                   <tbody>
                                     <tr>
-                                      <td style="width:256px">
-                                        <a href="${header-advisory__logo-href}" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="Info-Tech Research Group & SoftwareReviews Advisory" src="https://info.softwarereviews.com/rs/353-GFN-093/images/advisory-logo-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-sr-advisory-logo.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="256" height="auto">
+                                      <td style="width:150px">
+                                        <a href="${header__logo-href}" target="_blank" rel="noopener" style="color:inherit">
+                                          <img alt="SoftwareReviews" src="https://info.softwarereviews.com/rs/353-GFN-093/images/sr-logo-outline-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/SR-logo-outline.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="150" height="auto">
                                         </a>
                                       </td>
                                     </tr>
@@ -372,34 +226,13 @@
           </td>
         </tr>
 
-        <!-- ==================== SPACER - LARGE ==================== -->
-        <tr class="mktoModule" id="spacer-large" mktoname="Spacer - Large (48px)">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== SPACER - LARGE (48px) ==================== -->
+        <tr class="mktoModule" id="spacer-2xl" mktoname="Spacer - 2XL (48px)">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
-                <tbody>
-                  <tr>
-                    <td style="direction:ltr;font-size:0;padding:24px 0;text-align:center">
-                      <p style="border-top:solid 1px transparent;font-size:1px;margin:0 auto;width:100%"></p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!--[if mso | IE]></td></tr></table><![endif]-->
-          </td>
-        </tr>
-
-        <!-- ==================== SPACER - MEDIUM ==================== -->
-        <tr class="mktoModule" id="spacer-medium" mktoname="Spacer - Medium (32px)">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-
-            <div style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
                     <td style="direction:ltr;font-size:0;padding:16px 0;text-align:center">
@@ -414,16 +247,16 @@
           </td>
         </tr>
 
-        <!-- ==================== SPACER - SMALL ==================== -->
-        <tr class="mktoModule" id="spacer-small" mktoname="Spacer - Small (24px)">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== SPACER - XL (32px) ==================== -->
+        <tr class="mktoModule" id="spacer-xl" mktoname="Spacer - XL (32px)">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:12px 0;text-align:center">
+                    <td style="direction:ltr;font-size:0;padding:8px 0;text-align:center">
                       <p style="border-top:solid 1px transparent;font-size:1px;margin:0 auto;width:100%"></p>
                     </td>
                   </tr>
@@ -435,29 +268,50 @@
           </td>
         </tr>
 
-        <!-- ==================== TYPOGRAPHY - SR TITLE ==================== -->
-        <tr class="mktoModule" id="typography-sr" mktoname="Typography - SR Title">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="typography-sr-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== SPACER - LG (24px) ==================== -->
+        <tr class="mktoModule" id="spacer-lg" mktoname="Spacer - LG (24px)">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="typography-sr" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:504px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:4px 0;text-align:center">
+                      <p style="border-top:solid 1px transparent;font-size:1px;margin:0 auto;width:100%"></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!--[if mso | IE]></td></tr></table><![endif]-->
+          </td>
+        </tr>
+
+        <!-- ==================== TYPOGRAPHY ==================== -->
+        <tr class="mktoModule" id="typography" mktoname="Typography">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="typography-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+            <div class="typography" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
+                <tbody>
+                  <tr>
+                    <td style="direction:ltr;font-size:0;padding:0 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:520px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="typography-sr__content" class="mktoText" mktoname="Content">
-                                  <h1 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:40px;font-weight:700;line-height:1.15;letter-spacing:-0.02em;color:#24842e">
-                                    <a href="${typography__title-href}" style="color:#24842e;text-decoration:none" target="_blank" rel="noopener">Your Headline Goes Here</a>
+                                <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="typography__content" class="mktoText" mktoname="Content">
+                                  <h1 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:36px;font-weight:600;line-height:1.2;letter-spacing:-0.025em;color:#111827">
+                                    <a href="${typography__title-href}" style="color:#111827;text-decoration:none" target="_blank" rel="noopener">Your Headline Goes Here</a>
                                   </h1>
-                                  <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
-                                    This is your introductory paragraph with the larger, cleaner typography from the v2 style guide. The text is 18px with generous line height for improved readability.
+                                  <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
+                                    This is your introductory paragraph with the refined typography from the v2 style guide. The text is 15px with light weight (300) and generous line height for a sophisticated, readable feel.
                                   </p>
                                 </div>
                               </td>
@@ -477,29 +331,29 @@
           </td>
         </tr>
 
-        <!-- ==================== TYPOGRAPHY - ITRG TITLE ==================== -->
-        <tr class="mktoModule" id="typography-itrg" mktoname="Typography - ITRG Title">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="typography-itrg-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== TYPOGRAPHY - ACCENT HEADING ==================== -->
+        <tr class="mktoModule" id="typography-accent" mktoname="Typography - Accent Heading">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="typography-accent-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="typography-itrg" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="typography-accent" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:504px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:0 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:520px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="typography-itrg__content" class="mktoText" mktoname="Content">
-                                  <h1 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:40px;font-weight:700;line-height:1.15;letter-spacing:-0.02em;color:#216aa5">
-                                    Your Headline Goes Here
+                                <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="typography-accent__content" class="mktoText" mktoname="Content">
+                                  <h1 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:36px;font-weight:600;line-height:1.2;letter-spacing:-0.025em;color:#0891B2">
+                                    Accent Color Headline
                                   </h1>
-                                  <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
-                                    This is your introductory paragraph with the larger, cleaner typography from the v2 style guide. The text is 18px with generous line height for improved readability.
+                                  <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
+                                    Use the accent cyan for headings when you want to draw attention or add visual interest. The dark cyan (#0891B2) is accessible for text use.
                                   </p>
                                 </div>
                               </td>
@@ -521,34 +375,34 @@
 
         <!-- ==================== FLOATING CARD - CONTENT ==================== -->
         <tr class="mktoModule" id="card-content" mktoname="Floating Card - Content">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-content-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-content-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="card-content" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="card-content" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:552px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:560px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f7f7;background-color:#f7f7f7;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
-                                      <td style="padding:40px 48px">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="card-content__content" class="mktoText" mktoname="Card Content">
-                                          <h2 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:28px;font-weight:300;line-height:1.3;letter-spacing:-0.01em">
-                                            <a href="${card-content__title-href}" style="color:#000;text-decoration:none" target="_blank" rel="noopener">Card Section Title</a>
+                                      <td style="padding:36px 40px">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="card-content__content" class="mktoText" mktoname="Card Content">
+                                          <h2 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:26px;font-weight:500;line-height:1.3;letter-spacing:-0.02em;color:#111827">
+                                            <a href="${card-content__title-href}" style="color:#111827;text-decoration:none" target="_blank" rel="noopener">Card Section Title</a>
                                           </h2>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0 0 24px 0">
-                                            This floating card appears to hover over the email background thanks to the matching background colors. The warm grey (#f1f0f0) creates a subtle but visible distinction.
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0 0 16px 0">
+                                            This floating card appears to hover over the email background. The subtle grey (#f7f7f7) creates a clean distinction without being heavy.
                                           </p>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
-                                            The generous 40px vertical padding and 16px border radius create a modern, approachable feel.
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
+                                            The 20px border radius and generous padding create a modern, approachable feel.
                                           </p>
                                         </div>
                                       </td>
@@ -572,33 +426,33 @@
           </td>
         </tr>
 
-        <!-- ==================== FLOATING CARD - SR BRAND ==================== -->
-        <tr class="mktoModule" id="card-brand-sr" mktoname="Floating Card - SR Brand">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-brand-sr-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== FLOATING CARD - BRAND (DARK CYAN) ==================== -->
+        <tr class="mktoModule" id="card-brand" mktoname="Floating Card - Brand">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-brand-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="card-brand-sr" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="card-brand" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:552px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:560px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#24842e;background-color:#24842e;width:100%;border-radius:16px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0891B2;background-color:#0891B2;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
-                                      <td style="padding:40px 48px">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#fff" id="card-brand-sr__content" class="mktoText" mktoname="Card Content">
-                                          <h2 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:28px;font-weight:300;line-height:1.3;letter-spacing:-0.01em;color:#fff">
-                                            <a href="${card-brand-sr__title-href}" style="color:#fff;text-decoration:none" target="_blank" rel="noopener">Featured SR Content</a>
+                                      <td style="padding:36px 40px">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#ffffff" id="card-brand__content" class="mktoText" mktoname="Card Content">
+                                          <h2 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:26px;font-weight:500;line-height:1.3;letter-spacing:-0.02em;color:#ffffff">
+                                            <a href="${card-brand__title-href}" style="color:#ffffff;text-decoration:none" target="_blank" rel="noopener">Featured Content</a>
                                           </h2>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0;color:#fff">
-                                            This brand-colored card uses the SoftwareReviews green (#24842e) with white text. Use it to highlight key messages or calls to action.
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#ffffff;margin:0">
+                                            This brand card uses the dark cyan (#0891B2) with white text. Use it to highlight key messages or calls to action that need emphasis.
                                           </p>
                                         </div>
                                       </td>
@@ -622,33 +476,33 @@
           </td>
         </tr>
 
-        <!-- ==================== FLOATING CARD - ITRG BRAND ==================== -->
-        <tr class="mktoModule" id="card-brand-itrg" mktoname="Floating Card - ITRG Brand">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-brand-itrg-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== FLOATING CARD - ACCENT (LIGHT CYAN) ==================== -->
+        <tr class="mktoModule" id="card-accent" mktoname="Floating Card - Accent">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-accent-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="card-brand-itrg" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="card-accent" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:552px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:560px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#216aa5;background-color:#216aa5;width:100%;border-radius:16px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#E0F7FA;background-color:#E0F7FA;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
-                                      <td style="padding:40px 48px">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#fff" id="card-brand-itrg__content" class="mktoText" mktoname="Card Content">
-                                          <h2 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:28px;font-weight:300;line-height:1.3;letter-spacing:-0.01em;color:#fff">
-                                            <a href="${card-brand-itrg__title-href}" style="color:#fff;text-decoration:none" target="_blank" rel="noopener">Featured ITRG Content</a>
+                                      <td style="padding:36px 40px">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="card-accent__content" class="mktoText" mktoname="Card Content">
+                                          <h2 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:26px;font-weight:500;line-height:1.3;letter-spacing:-0.02em;color:#065663">
+                                            <a href="${card-accent__title-href}" style="color:#065663;text-decoration:none" target="_blank" rel="noopener">Subtle Highlight</a>
                                           </h2>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0;color:#fff">
-                                            This brand-colored card uses the Info-Tech blue (#216aa5) with white text. Use it to highlight key messages or calls to action.
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
+                                            This accent card uses a light cyan tint (#E0F7FA) for subtle highlighting without the full brand color. Great for tips, notes, or secondary callouts.
                                           </p>
                                         </div>
                                       </td>
@@ -672,44 +526,44 @@
           </td>
         </tr>
 
-        <!-- ==================== FLOATING CARD WITH BUTTON - SR ==================== -->
-        <tr class="mktoModule" id="card-with-button" mktoname="Floating Card with Button - SR">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-with-button-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== FLOATING CARD WITH BUTTON ==================== -->
+        <tr class="mktoModule" id="card-with-button" mktoname="Floating Card with Button">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-with-button-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="card-with-button" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="card-with-button" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:552px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:560px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f7f7;background-color:#f7f7f7;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
-                                      <td style="padding:40px 48px">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="card-with-button__content" class="mktoText" mktoname="Card Content">
-                                          <h3 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:22px;font-weight:500;line-height:1.3;letter-spacing:-0.01em;color:#24842e">
+                                      <td style="padding:36px 40px">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="card-with-button__content" class="mktoText" mktoname="Card Content">
+                                          <h3 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:1.35;letter-spacing:-0.01em;color:#111827">
                                             Card with Call to Action
                                           </h3>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
                                             This card includes a prominent pill-shaped button. Perfect for driving conversions and engagement with your content.
                                           </p>
                                         </div>
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding-top:32px">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding-top:24px">
                                           <tbody>
                                             <tr>
                                               <td align="left">
                                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                                   <tbody>
                                                     <tr>
-                                                      <td align="center" bgcolor="#24842E" role="presentation" style="border:none;border-radius:24px;cursor:auto;mso-padding-alt:14px 28px;background:#24842e" valign="middle">
-                                                        <a href="${card-with-button__button-href}" style="display:inline-block;background:#24842e;color:#fff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:14px 28px;mso-padding-alt:0;border-radius:24px" target="_blank">${card-with-button__button}</a>
+                                                      <td align="center" bgcolor="#91E6F7" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#91E6F7" valign="middle">
+                                                        <a href="${card-with-button__button-href}" style="display:inline-block;background:#91E6F7;color:#065663;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${card-with-button__button}</a>
                                                       </td>
                                                     </tr>
                                                   </tbody>
@@ -739,52 +593,28 @@
           </td>
         </tr>
 
-        <!-- ==================== FLOATING CARD WITH BUTTON - ITRG ==================== -->
-        <tr class="mktoModule" id="card-with-button-itrg" mktoname="Floating Card with Button - ITRG">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-with-button-itrg-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== BUTTON - PRIMARY (BRIGHT CYAN) ==================== -->
+        <tr class="mktoModule" id="button-primary" mktoname="Button - Primary">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-primary-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="card-with-button-itrg" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="button-primary" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:552px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:16px 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:520px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
-                              <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                              <td align="center" style="font-size:0;padding:0;word-break:break-word">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                   <tbody>
                                     <tr>
-                                      <td style="padding:40px 48px">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="card-with-button-itrg__content" class="mktoText" mktoname="Card Content">
-                                          <h3 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:22px;font-weight:500;line-height:1.3;letter-spacing:-0.01em;color:#216aa5">
-                                            Card with Call to Action
-                                          </h3>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
-                                            This card includes a prominent pill-shaped button. Perfect for driving conversions and engagement with your content.
-                                          </p>
-                                        </div>
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding-top:32px">
-                                          <tbody>
-                                            <tr>
-                                              <td align="left">
-                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
-                                                  <tbody>
-                                                    <tr>
-                                                      <td align="center" bgcolor="#216AA5" role="presentation" style="border:none;border-radius:24px;cursor:auto;mso-padding-alt:14px 28px;background:#216aa5" valign="middle">
-                                                        <a href="${card-with-button-itrg__button-href}" style="display:inline-block;background:#216aa5;color:#fff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:14px 28px;mso-padding-alt:0;border-radius:24px" target="_blank">${card-with-button-itrg__button}</a>
-                                                      </td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
+                                      <td align="center" bgcolor="#91E6F7" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#91E6F7" valign="middle">
+                                        <a href="${button-primary__button-href}" style="display:inline-block;background:#91E6F7;color:#065663;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-primary__button}</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -806,17 +636,17 @@
           </td>
         </tr>
 
-        <!-- ==================== BUTTON - PILL SR ==================== -->
-        <tr class="mktoModule" id="button-pill" mktoname="Button - Pill (SR)">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-pill-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== BUTTON - SECONDARY (DARK CYAN) ==================== -->
+        <tr class="mktoModule" id="button-secondary" mktoname="Button - Secondary">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-secondary-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="button-pill" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="button-secondary" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:504px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:16px 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:520px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
@@ -826,8 +656,8 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                   <tbody>
                                     <tr>
-                                      <td align="center" bgcolor="#24842E" role="presentation" style="border:none;border-radius:24px;cursor:auto;mso-padding-alt:14px 28px;background:#24842e" valign="middle">
-                                        <a href="${button-pill__button-href}" style="display:inline-block;background:#24842e;color:#fff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:14px 28px;mso-padding-alt:0;border-radius:24px" target="_blank">${button-pill__button}</a>
+                                      <td align="center" bgcolor="#0891B2" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#0891B2" valign="middle">
+                                        <a href="${button-secondary__button-href}" style="display:inline-block;background:#0891B2;color:#ffffff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-secondary__button}</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -849,17 +679,17 @@
           </td>
         </tr>
 
-        <!-- ==================== BUTTON - PILL ITRG ==================== -->
-        <tr class="mktoModule" id="button-pill-itrg" mktoname="Button - Pill (ITRG)">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-pill-itrg-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <!-- ==================== BUTTON - OUTLINE ==================== -->
+        <tr class="mktoModule" id="button-outline" mktoname="Button - Outline">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-outline-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="button-pill-itrg" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="button-outline" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:504px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:16px 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:520px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
@@ -869,51 +699,8 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                   <tbody>
                                     <tr>
-                                      <td align="center" bgcolor="#216AA5" role="presentation" style="border:none;border-radius:24px;cursor:auto;mso-padding-alt:14px 28px;background:#216aa5" valign="middle">
-                                        <a href="${button-pill-itrg__button-href}" style="display:inline-block;background:#216aa5;color:#fff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:14px 28px;mso-padding-alt:0;border-radius:24px" target="_blank">${button-pill-itrg__button}</a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <!--[if mso | IE]></td></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!--[if mso | IE]></td></tr></table><![endif]-->
-          </td>
-        </tr>
-
-        <!-- ==================== BUTTON - PILL OUTLINE SR ==================== -->
-        <tr class="mktoModule" id="button-pill-outline" mktoname="Button - Pill Outline (SR)">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-pill-outline-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-
-            <div class="button-pill-outline" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
-                <tbody>
-                  <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:504px;"><![endif]-->
-
-                      <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="center" style="font-size:0;padding:0;word-break:break-word">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
-                                  <tbody>
-                                    <tr>
-                                      <td align="center" bgcolor="#FCFCFC" role="presentation" style="border:solid 2px #24842e;border-radius:24px;cursor:auto;mso-padding-alt:12px 26px;background:#fcfcfc" valign="middle">
-                                        <a href="${button-pill-outline__button-href}" style="display:inline-block;background:#fcfcfc;color:#24842e;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:12px 26px;mso-padding-alt:0;border-radius:24px" target="_blank">${button-pill-outline__button}</a>
+                                      <td align="center" bgcolor="#FFFFFF" role="presentation" style="border:solid 2px #0891B2;border-radius:50px;cursor:auto;mso-padding-alt:10px 22px;background:#ffffff" valign="middle">
+                                        <a href="${button-outline__button-href}" style="display:inline-block;background:#ffffff;color:#0891B2;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:10px 22px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-outline__button}</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -936,24 +723,24 @@
         </tr>
 
         <!-- ==================== IMAGE - ROUNDED ==================== -->
-        <tr class="mktoModule" id="section-image" mktoname="Image - Rounded">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="section-image-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <tr class="mktoModule" id="image-rounded" mktoname="Image - Rounded">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="image-rounded-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="section-image" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="image-rounded" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:552px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:560px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
                               <td align="center" style="font-size:0;padding:0;word-break:break-word">
-                                <div id="section-image__image" class="mktoImg" mktoName="Image" mktoLockImgStyle="true" mktoImgLink="${section-image__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="552" mktoImgHeight="auto">
-                                  <img alt="" src="https://info.softwarereviews.com/rs/353-GFN-093/images/placeholder-496x284.png" style="border:0;border-radius:16px;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="552" height="auto">
+                                <div id="image-rounded__image" class="mktoImg" mktoName="Image" mktoLockImgStyle="true" mktoImgLink="${image-rounded__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="560" mktoImgHeight="auto">
+                                  <img alt="" src="https://info.softwarereviews.com/rs/353-GFN-093/images/placeholder-496x284.png" style="border:0;border-radius:12px;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="560" height="auto">
                                 </div>
                               </td>
                             </tr>
@@ -973,12 +760,12 @@
         </tr>
 
         <!-- ==================== IMAGE - FULL WIDTH ==================== -->
-        <tr class="mktoModule" id="full-width-image" mktoname="Image - Full Width">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-image-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <tr class="mktoModule" id="image-full" mktoname="Image - Full Width">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="image-full-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="full-width-image" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="image-full" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
                     <td style="direction:ltr;font-size:0;padding:0;text-align:center">
@@ -989,7 +776,7 @@
                           <tbody>
                             <tr>
                               <td align="center" style="font-size:0;padding:0;word-break:break-word">
-                                <div id="full-width-image__image" class="mktoImg" mktoName="Full Width Image" mktoLockImgStyle="true" mktoImgLink="${full-width-image__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="600" mktoImgHeight="auto">
+                                <div id="image-full__image" class="mktoImg" mktoName="Full Width Image" mktoLockImgStyle="true" mktoImgLink="${image-full__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="600" mktoImgHeight="auto">
                                   <img alt="" src="https://info.softwarereviews.com/rs/353-GFN-093/images/600x363.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="600" height="auto">
                                 </div>
                               </td>
@@ -1010,31 +797,31 @@
         </tr>
 
         <!-- ==================== TWO COL - TEXT + BUTTON ==================== -->
-        <tr class="mktoModule" id="two-col-text-button" mktoname="Two Column - Text + Button (SR)">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-text-button-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <tr class="mktoModule" id="two-col-text-button" mktoname="Two Column - Text + Button">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-text-button-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="two-col-text-button" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="two-col-text-button" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f7f7;background-color:#f7f7f7;width:100%;border-radius:20px">
                         <tbody>
                           <tr>
-                            <td style="padding:40px 48px">
-                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-65" style="vertical-align:middle;width:296px;"><![endif]-->
+                            <td style="padding:36px 40px">
+                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-65" style="vertical-align:middle;width:312px;"><![endif]-->
 
                               <div class="mj-column-per-65 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
                                   <tbody>
                                     <tr>
-                                      <td align="left" style="font-size:0;padding:0 12px 0 0;word-break:break-word">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="two-col-text-button__content" class="mktoText" mktoname="Content">
-                                          <h3 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:22px;font-weight:500;line-height:1.3;letter-spacing:-0.01em;color:#24842e">
+                                      <td align="left" style="font-size:0;padding:0 16px 0 0;word-break:break-word">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="two-col-text-button__content" class="mktoText" mktoname="Content">
+                                          <h3 style="margin:0 0 12px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:1.35;letter-spacing:-0.01em;color:#111827">
                                             Two Column Layout
                                           </h3>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
                                             Text on the left with a call-to-action button on the right.
                                           </p>
                                         </div>
@@ -1044,7 +831,7 @@
                                 </table>
                               </div>
 
-                              <!--[if mso | IE]></td><td class="mj-column-per-35" style="vertical-align:middle;width:160px;"><![endif]-->
+                              <!--[if mso | IE]></td><td class="mj-column-per-35" style="vertical-align:middle;width:168px;"><![endif]-->
 
                               <div class="mj-column-per-35 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
@@ -1054,8 +841,8 @@
                                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                           <tbody>
                                             <tr>
-                                              <td align="center" bgcolor="#24842E" role="presentation" style="border:none;border-radius:24px;cursor:auto;mso-padding-alt:14px 28px;background:#24842e" valign="middle">
-                                                <a href="${two-col-text-button__button-href}" style="display:inline-block;background:#24842e;color:#fff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:14px 28px;mso-padding-alt:0;border-radius:24px" target="_blank">${two-col-text-button__button}</a>
+                                              <td align="center" bgcolor="#91E6F7" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#91E6F7" valign="middle">
+                                                <a href="${two-col-text-button__button-href}" style="display:inline-block;background:#91E6F7;color:#065663;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${two-col-text-button__button}</a>
                                               </td>
                                             </tr>
                                           </tbody>
@@ -1083,30 +870,30 @@
 
         <!-- ==================== TWO COL - TEXT + IMAGE ==================== -->
         <tr class="mktoModule" id="two-col-text-image" mktoname="Two Column - Text + Image">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-text-image-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-text-image-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="two-col-text-image" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="two-col-text-image" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f7f7;background-color:#f7f7f7;width:100%;border-radius:20px">
                         <tbody>
                           <tr>
-                            <td style="padding:40px 48px">
-                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-50" style="vertical-align:middle;width:228px;"><![endif]-->
+                            <td style="padding:36px 40px">
+                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-50" style="vertical-align:middle;width:240px;"><![endif]-->
 
                               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
                                   <tbody>
                                     <tr>
-                                      <td align="left" style="font-size:0;padding:0 12px 0 0;word-break:break-word">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="two-col-text-image__content" class="mktoText" mktoname="Content">
-                                          <h3 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:22px;font-weight:500;line-height:1.3;letter-spacing:-0.01em">
+                                      <td align="left" style="font-size:0;padding:0 16px 0 0;word-break:break-word">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="two-col-text-image__content" class="mktoText" mktoname="Content">
+                                          <h3 style="margin:0 0 12px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:1.35;letter-spacing:-0.01em;color:#111827">
                                             Text and Image
                                           </h3>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
                                             Content on the left pairs with a supporting image on the right.
                                           </p>
                                         </div>
@@ -1116,15 +903,15 @@
                                 </table>
                               </div>
 
-                              <!--[if mso | IE]></td><td class="mj-column-per-50" style="vertical-align:middle;width:228px;"><![endif]-->
+                              <!--[if mso | IE]></td><td class="mj-column-per-50" style="vertical-align:middle;width:240px;"><![endif]-->
 
                               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
                                   <tbody>
                                     <tr>
                                       <td align="center" style="font-size:0;padding:0;word-break:break-word">
-                                        <div id="two-col-text-image__image" class="mktoImg" mktoName="Image" mktoLockImgStyle="true" mktoImgLink="${two-col-text-image__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="216" mktoImgHeight="auto">
-                                          <img alt="" src="https://info.softwarereviews.com/rs/353-GFN-093/images/240x180.jpg" style="border:0;border-radius:16px;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="216" height="auto">
+                                        <div id="two-col-text-image__image" class="mktoImg" mktoName="Image" mktoLockImgStyle="true" mktoImgLink="${two-col-text-image__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="224" mktoImgHeight="auto">
+                                          <img alt="" src="https://info.softwarereviews.com/rs/353-GFN-093/images/240x180.jpg" style="border:0;border-radius:12px;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="224" height="auto">
                                         </div>
                                       </td>
                                     </tr>
@@ -1149,27 +936,27 @@
 
         <!-- ==================== TWO COL - IMAGE + TEXT ==================== -->
         <tr class="mktoModule" id="two-col-image-text" mktoname="Two Column - Image + Text">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-image-text-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-image-text-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="two-col-image-text" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="two-col-image-text" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f7f7;background-color:#f7f7f7;width:100%;border-radius:20px">
                         <tbody>
                           <tr>
-                            <td style="padding:40px 48px">
-                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-50" style="vertical-align:middle;width:228px;"><![endif]-->
+                            <td style="padding:36px 40px">
+                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-50" style="vertical-align:middle;width:240px;"><![endif]-->
 
                               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
                                   <tbody>
                                     <tr>
-                                      <td align="center" style="font-size:0;padding:0 12px 0 0;word-break:break-word">
-                                        <div id="two-col-image-text__image" class="mktoImg" mktoName="Image" mktoLockImgStyle="true" mktoImgLink="${two-col-image-text__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="216" mktoImgHeight="auto">
-                                          <img alt="" src="https://info.softwarereviews.com/rs/353-GFN-093/images/240x180.jpg" style="border:0;border-radius:16px;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="216" height="auto">
+                                      <td align="center" style="font-size:0;padding:0 16px 0 0;word-break:break-word">
+                                        <div id="two-col-image-text__image" class="mktoImg" mktoName="Image" mktoLockImgStyle="true" mktoImgLink="${two-col-image-text__image-href}" mktoImgLinkTarget="_blank" mktoImgWidth="224" mktoImgHeight="auto">
+                                          <img alt="" src="https://info.softwarereviews.com/rs/353-GFN-093/images/240x180.jpg" style="border:0;border-radius:12px;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="224" height="auto">
                                         </div>
                                       </td>
                                     </tr>
@@ -1177,18 +964,18 @@
                                 </table>
                               </div>
 
-                              <!--[if mso | IE]></td><td class="mj-column-per-50" style="vertical-align:middle;width:228px;"><![endif]-->
+                              <!--[if mso | IE]></td><td class="mj-column-per-50" style="vertical-align:middle;width:240px;"><![endif]-->
 
                               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
                                   <tbody>
                                     <tr>
                                       <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6;text-align:left;color:#000" id="two-col-image-text__content" class="mktoText" mktoname="Content">
-                                          <h3 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:22px;font-weight:500;line-height:1.3;letter-spacing:-0.01em">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="two-col-image-text__content" class="mktoText" mktoname="Content">
+                                          <h3 style="margin:0 0 12px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:1.35;letter-spacing:-0.01em;color:#111827">
                                             Image and Text
                                           </h3>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
                                             A supporting image on the left pairs with content on the right.
                                           </p>
                                         </div>
@@ -1215,30 +1002,30 @@
 
         <!-- ==================== TWO COL - CARDS ==================== -->
         <tr class="mktoModule" id="two-col-cards" mktoname="Two Column - Cards">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-cards-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="two-col-cards-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="two-col-cards" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="two-col-cards" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-49" style="vertical-align:top;width:270px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:0 20px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-49" style="vertical-align:top;width:274px;"><![endif]-->
 
                       <div class="mj-column-per-49 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
-                              <td align="left" style="font-size:0;padding:0 6px 0 0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                              <td align="left" style="font-size:0;padding:0 8px 0 0;word-break:break-word">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f7f7;background-color:#f7f7f7;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
-                                      <td style="padding:32px">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;text-align:left;color:#000" id="two-col-cards__card1" class="mktoText" mktoname="Card 1 Content">
-                                          <h4 style="margin:0 0 12px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;line-height:1.35;color:#24842e">
+                                      <td style="padding:28px 32px">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="two-col-cards__card1" class="mktoText" mktoname="Card 1 Content">
+                                          <h4 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;line-height:1.4;color:#0891B2">
                                             Card One
                                           </h4>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:300;line-height:1.6;color:#374151;margin:0">
                                             Compact content for side-by-side comparison or feature highlights.
                                           </p>
                                         </div>
@@ -1252,22 +1039,22 @@
                         </table>
                       </div>
 
-                      <!--[if mso | IE]></td><td class="mj-column-per-49" style="vertical-align:top;width:270px;"><![endif]-->
+                      <!--[if mso | IE]></td><td class="mj-column-per-49" style="vertical-align:top;width:274px;"><![endif]-->
 
                       <div class="mj-column-per-49 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
                           <tbody>
                             <tr>
-                              <td align="left" style="font-size:0;padding:0 0 0 6px;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
+                              <td align="left" style="font-size:0;padding:0 0 0 8px;word-break:break-word">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f7f7;background-color:#f7f7f7;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
-                                      <td style="padding:32px">
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;text-align:left;color:#000" id="two-col-cards__card2" class="mktoText" mktoname="Card 2 Content">
-                                          <h4 style="margin:0 0 12px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;line-height:1.35;color:#24842e">
+                                      <td style="padding:28px 32px">
+                                        <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="two-col-cards__card2" class="mktoText" mktoname="Card 2 Content">
+                                          <h4 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;line-height:1.4;color:#0891B2">
                                             Card Two
                                           </h4>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.6;letter-spacing:-0.005em;margin:0">
+                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:300;line-height:1.6;color:#374151;margin:0">
                                             Compact content for side-by-side comparison or feature highlights.
                                           </p>
                                         </div>
@@ -1292,142 +1079,17 @@
           </td>
         </tr>
 
-        <!-- ==================== THREE COL - STEPS ==================== -->
-        <tr class="mktoModule" id="three-col-steps" mktoname="Three Column - Steps">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="three-col-steps-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-
-            <div class="three-col-steps" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
-                <tbody>
-                  <tr>
-                    <td style="direction:ltr;font-size:0;padding:0 24px;text-align:center">
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f0f0;background-color:#f1f0f0;width:100%;border-radius:16px">
-                        <tbody>
-                          <tr>
-                            <td style="padding:40px 32px">
-                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-33" style="vertical-align:top;width:178px;"><![endif]-->
-
-                              <div class="mj-column-per-33 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
-                                  <tbody>
-                                    <tr>
-                                      <td align="center" style="font-size:0;padding:0 8px;word-break:break-word">
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                          <tbody>
-                                            <tr>
-                                              <td style="width:50px;padding-bottom:16px">
-                                                <a href="${three-col-steps__step1-href}" target="_blank" rel="noopener" style="color:inherit">
-                                                  <img alt="Step 1" src="https://info.softwarereviews.com/rs/353-GFN-093/images/step1.png?version=1" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="50" height="auto">
-                                                </a>
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;text-align:center;color:#000" id="three-col-steps__step1" class="mktoText" mktoname="Step 1 Content">
-                                          <h5 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;line-height:1.35">
-                                            First Step
-                                          </h5>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0">
-                                            Brief description of step one.
-                                          </p>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-
-                              <!--[if mso | IE]></td><td class="mj-column-per-33" style="vertical-align:top;width:178px;"><![endif]-->
-
-                              <div class="mj-column-per-33 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
-                                  <tbody>
-                                    <tr>
-                                      <td align="center" style="font-size:0;padding:0 8px;word-break:break-word">
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                          <tbody>
-                                            <tr>
-                                              <td style="width:50px;padding-bottom:16px">
-                                                <a href="${three-col-steps__step2-href}" target="_blank" rel="noopener" style="color:inherit">
-                                                  <img alt="Step 2" src="https://info.softwarereviews.com/rs/353-GFN-093/images/step2.png?version=1" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="50" height="auto">
-                                                </a>
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;text-align:center;color:#000" id="three-col-steps__step2" class="mktoText" mktoname="Step 2 Content">
-                                          <h5 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;line-height:1.35">
-                                            Second Step
-                                          </h5>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0">
-                                            Brief description of step two.
-                                          </p>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-
-                              <!--[if mso | IE]></td><td class="mj-column-per-33" style="vertical-align:top;width:178px;"><![endif]-->
-
-                              <div class="mj-column-per-33 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
-                                  <tbody>
-                                    <tr>
-                                      <td align="center" style="font-size:0;padding:0 8px;word-break:break-word">
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                          <tbody>
-                                            <tr>
-                                              <td style="width:50px;padding-bottom:16px">
-                                                <a href="${three-col-steps__step3-href}" target="_blank" rel="noopener" style="color:inherit">
-                                                  <img alt="Step 3" src="https://info.softwarereviews.com/rs/353-GFN-093/images/step3.png?version=1" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="50" height="auto">
-                                                </a>
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                        <div style="font-family:Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;text-align:center;color:#000" id="three-col-steps__step3" class="mktoText" mktoname="Step 3 Content">
-                                          <h5 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;line-height:1.35">
-                                            Third Step
-                                          </h5>
-                                          <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0">
-                                            Brief description of step three.
-                                          </p>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-
-                              <!--[if mso | IE]></td></tr></table><![endif]-->
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!--[if mso | IE]></td></tr></table><![endif]-->
-          </td>
-        </tr>
-
         <!-- ==================== DIVIDER ==================== -->
         <tr class="mktoModule" id="divider" mktoname="Divider">
-          <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="divider-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="divider-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="divider" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="divider" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:32px 48px;text-align:center">
-                      <p style="border-top:solid 1px #d6d6d6;font-size:1px;margin:0 auto;width:100%"></p>
+                    <td style="direction:ltr;font-size:0;padding:16px 40px;text-align:center">
+                      <p style="border-top:solid 1px #E5E7EB;font-size:1px;margin:0 auto;width:100%"></p>
                     </td>
                   </tr>
                 </tbody>
@@ -1441,14 +1103,14 @@
         <!-- ==================== FOOTER ==================== -->
         <tr class="mktoModule" id="footer" mktoname="Footer">
           <td>
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#fcfcfc"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="footer" style="background:#fcfcfc;background-color:#fcfcfc;margin:0 auto;max-width:600px">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fcfcfc;background-color:#fcfcfc;width:100%">
+            <div class="footer" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
-                    <td style="direction:ltr;font-size:0;padding:48px 48px 32px;text-align:center">
-                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:504px;"><![endif]-->
+                    <td style="direction:ltr;font-size:0;padding:40px 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:top;width:520px;"><![endif]-->
 
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top" width="100%">
@@ -1461,17 +1123,17 @@
                                     <tr>
                                       <td style="padding:0 16px">
                                         <a href="https://www.linkedin.com/company/softwarereviews/?utm_source=marketo&utm_medium=email" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="LinkedIn" src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-linkedin-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/social-linkedin.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="33" height="auto">
+                                          <img alt="LinkedIn" src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-linkedin-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/social-linkedin.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="28" height="auto">
                                         </a>
                                       </td>
                                       <td style="padding:0 16px">
                                         <a href="https://twitter.com/SW_Reviews?utm_source=marketo&utm_medium=email" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="X (Twitter)" src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-x-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/social-x.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="33" height="auto">
+                                          <img alt="X (Twitter)" src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-x-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/social-x.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="28" height="auto">
                                         </a>
                                       </td>
                                       <td style="padding:0 16px">
                                         <a href="https://www.facebook.com/softwarereviewsITRG/?utm_source=marketo&utm_medium=email" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="Facebook" src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-facebook-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/social-facebook.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="33" height="auto">
+                                          <img alt="Facebook" src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-facebook-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/social-facebook.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="28" height="auto">
                                         </a>
                                       </td>
                                     </tr>
@@ -1482,21 +1144,21 @@
                             <!-- Footer Links -->
                             <tr>
                               <td align="center" style="font-size:0;padding:0 0 24px 0;word-break:break-word">
-                                <nav style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:12px;line-height:1.35;text-align:center;color:#767676" aria-label="Footer Links">
-                                  <a href="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" style="color:#767676;text-decoration:underline" target="_blank" rel="noopener">Home</a>
-                                  <span aria-hidden="true" style="padding:0 8px">|</span>
-                                  <a href="https://www.softwarereviews.com/privacy?utm_source=marketo&utm_medium=email" style="color:#767676;text-decoration:underline" target="_blank" rel="noopener">Privacy Policy</a>
-                                  <span aria-hidden="true" style="padding:0 8px">|</span>
-                                  <a href="https://www.softwarereviews.com/terms-and-conditions?utm_source=marketo&utm_medium=email" style="color:#767676;text-decoration:underline" target="_blank" rel="noopener">Terms of Use</a>
-                                  <span aria-hidden="true" style="padding:0 8px">|</span>
-                                  <a href="https://info.softwarereviews.com/Preference-Center.html?utm_source=marketo&utm_medium=email" style="color:#767676;text-decoration:underline" target="_blank" rel="noopener">Email Preferences</a>
+                                <nav style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.5;text-align:center;color:#9CA3AF" aria-label="Footer Links">
+                                  <a href="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Home</a>
+                                  <span aria-hidden="true" style="padding:0 8px;color:#E5E7EB">|</span>
+                                  <a href="https://www.softwarereviews.com/privacy?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Privacy Policy</a>
+                                  <span aria-hidden="true" style="padding:0 8px;color:#E5E7EB">|</span>
+                                  <a href="https://www.softwarereviews.com/terms-and-conditions?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Terms of Use</a>
+                                  <span aria-hidden="true" style="padding:0 8px;color:#E5E7EB">|</span>
+                                  <a href="https://info.softwarereviews.com/Preference-Center.html?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Email Preferences</a>
                                 </nav>
                               </td>
                             </tr>
                             <!-- Copyright -->
                             <tr>
                               <td align="center" style="font-size:0;padding:0;word-break:break-word">
-                                <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:12px;line-height:1.5;text-align:center;color:#767676" id="footer__copyright" class="mktoText" mktoname="Copyright">
+                                <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.6;text-align:center;color:#9CA3AF" id="footer__copyright" class="mktoText" mktoname="Copyright">
                                   <p style="margin:0 0 8px 0">
                                     &copy; 1997 - ${copyright-year} SoftwareReviews.
                                   </p>
