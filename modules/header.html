@@ -1,0 +1,51 @@
+<!--
+    Marketo Module: Header
+    Usage: Copy this module into your email template's <table> structure
+    Variables Required: ${primaryColor}
+-->
+
+<!-- Header with Logo -->
+<tr class="mktoModule" id="headerLogoModule" mktoName="Header - Logo Only">
+    <td style="padding: 20px; text-align: center; background-color: ${primaryColor};">
+        <div class="mktoImg" id="headerLogo" mktoName="Header Logo" mktoImgWidth="200">
+            <a href="https://www.example.com">
+                <img src="https://via.placeholder.com/200x50/ffffff/000000?text=LOGO" alt="Company Logo" style="max-width: 200px; height: auto;">
+            </a>
+        </div>
+    </td>
+</tr>
+
+<!-- Header with Logo and Navigation -->
+<tr class="mktoModule" id="headerNavModule" mktoName="Header - Logo with Nav">
+    <td style="padding: 15px 30px; background-color: ${primaryColor};">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+                <td width="200" valign="middle">
+                    <div class="mktoImg" id="headerNavLogo" mktoName="Logo" mktoImgWidth="150">
+                        <a href="https://www.example.com">
+                            <img src="https://via.placeholder.com/150x40/ffffff/000000?text=LOGO" alt="Company Logo" style="max-width: 150px; height: auto;">
+                        </a>
+                    </div>
+                </td>
+                <td valign="middle" style="text-align: right;">
+                    <div class="mktoText" id="headerNavLinks" mktoName="Navigation Links">
+                        <a href="#" style="color: #ffffff; text-decoration: none; margin-left: 15px; font-family: Arial, sans-serif; font-size: 14px;">Products</a>
+                        <a href="#" style="color: #ffffff; text-decoration: none; margin-left: 15px; font-family: Arial, sans-serif; font-size: 14px;">Services</a>
+                        <a href="#" style="color: #ffffff; text-decoration: none; margin-left: 15px; font-family: Arial, sans-serif; font-size: 14px;">Contact</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!-- Header - Minimal (White Background) -->
+<tr class="mktoModule" id="headerMinimalModule" mktoName="Header - Minimal">
+    <td style="padding: 25px 30px; text-align: center; background-color: #ffffff; border-bottom: 1px solid #eeeeee;">
+        <div class="mktoImg" id="headerMinimalLogo" mktoName="Logo" mktoImgWidth="180">
+            <a href="https://www.example.com">
+                <img src="https://via.placeholder.com/180x45" alt="Company Logo" style="max-width: 180px; height: auto;">
+            </a>
+        </div>
+    </td>
+</tr>

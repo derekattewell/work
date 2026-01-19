@@ -1,0 +1,137 @@
+<!--
+    Marketo Modules: CTA Buttons
+    Usage: Copy these modules into your email template's <table> structure
+    Variables Required: ${fontFamily}, ${primaryColor}, ${secondaryColor}
+-->
+
+<!-- Primary CTA Button - Centered -->
+<tr class="mktoModule" id="ctaPrimaryModule" mktoName="CTA - Primary Button">
+    <td style="padding: 30px; text-align: center;">
+        <div class="mktoText" id="ctaPrimaryBtn" mktoName="Primary Button">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                    <td style="border-radius: 4px; background-color: ${primaryColor};">
+                        <a href="https://www.example.com" style="display: inline-block; padding: 14px 32px; font-family: ${fontFamily}; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 4px;">
+                            Get Started Now
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+</tr>
+
+<!-- Secondary CTA Button - Outlined -->
+<tr class="mktoModule" id="ctaSecondaryModule" mktoName="CTA - Secondary Button">
+    <td style="padding: 30px; text-align: center;">
+        <div class="mktoText" id="ctaSecondaryBtn" mktoName="Secondary Button">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                    <td style="border-radius: 4px; border: 2px solid ${primaryColor}; background-color: transparent;">
+                        <a href="https://www.example.com" style="display: inline-block; padding: 12px 30px; font-family: ${fontFamily}; font-size: 16px; font-weight: bold; color: ${primaryColor}; text-decoration: none; border-radius: 4px;">
+                            Learn More
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+</tr>
+
+<!-- Dual CTA Buttons -->
+<tr class="mktoModule" id="ctaDualModule" mktoName="CTA - Dual Buttons">
+    <td style="padding: 30px; text-align: center;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tr>
+                <td style="padding-right: 10px;">
+                    <div class="mktoText" id="ctaDualPrimary" mktoName="Primary Button">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td style="border-radius: 4px; background-color: ${primaryColor};">
+                                    <a href="https://www.example.com" style="display: inline-block; padding: 12px 24px; font-family: ${fontFamily}; font-size: 14px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 4px;">
+                                        Primary Action
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td style="padding-left: 10px;">
+                    <div class="mktoText" id="ctaDualSecondary" mktoName="Secondary Button">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                <td style="border-radius: 4px; border: 2px solid ${secondaryColor};">
+                                    <a href="https://www.example.com" style="display: inline-block; padding: 10px 22px; font-family: ${fontFamily}; font-size: 14px; font-weight: bold; color: ${secondaryColor}; text-decoration: none; border-radius: 4px;">
+                                        Secondary Action
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!-- CTA with Text Above -->
+<tr class="mktoModule" id="ctaWithTextModule" mktoName="CTA - With Supporting Text">
+    <td style="padding: 30px; text-align: center; font-family: ${fontFamily};">
+        <div class="mktoText" id="ctaSupportText" mktoName="Supporting Text">
+            <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.5; color: ${secondaryColor};">
+                Ready to take the next step? Click below to get started.
+            </p>
+        </div>
+        <div class="mktoText" id="ctaMainBtn" mktoName="CTA Button">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                    <td style="border-radius: 25px; background-color: ${primaryColor};">
+                        <a href="https://www.example.com" style="display: inline-block; padding: 14px 40px; font-family: ${fontFamily}; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 25px;">
+                            Start Your Free Trial
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+</tr>
+
+<!-- Full-Width CTA Banner -->
+<tr class="mktoModule" id="ctaBannerModule" mktoName="CTA - Banner">
+    <td style="padding: 40px 30px; background-color: ${primaryColor}; text-align: center;">
+        <div class="mktoText" id="ctaBannerHeadline" mktoName="Banner Headline">
+            <h2 style="margin: 0 0 15px 0; font-family: ${fontFamily}; font-size: 24px; font-weight: bold; color: #ffffff;">
+                Ready to Get Started?
+            </h2>
+        </div>
+        <div class="mktoText" id="ctaBannerSubtext" mktoName="Banner Subtext">
+            <p style="margin: 0 0 25px 0; font-family: ${fontFamily}; font-size: 16px; color: rgba(255,255,255,0.9);">
+                Join thousands of satisfied customers today.
+            </p>
+        </div>
+        <div class="mktoText" id="ctaBannerBtn" mktoName="Banner Button">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                    <td style="border-radius: 4px; background-color: #ffffff;">
+                        <a href="https://www.example.com" style="display: inline-block; padding: 14px 32px; font-family: ${fontFamily}; font-size: 16px; font-weight: bold; color: ${primaryColor}; text-decoration: none; border-radius: 4px;">
+                            Sign Up Now
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+</tr>
+
+<!-- Text Link CTA -->
+<tr class="mktoModule" id="ctaTextLinkModule" mktoName="CTA - Text Link">
+    <td style="padding: 20px 30px; text-align: center;">
+        <div class="mktoText" id="ctaTextLink" mktoName="Text Link">
+            <p style="margin: 0; font-family: ${fontFamily}; font-size: 15px; color: ${secondaryColor};">
+                <a href="https://www.example.com" style="color: ${primaryColor}; text-decoration: underline; font-weight: bold;">
+                    Click here to learn more &rarr;
+                </a>
+            </p>
+        </div>
+    </td>
+</tr>

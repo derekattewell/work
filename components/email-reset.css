@@ -1,0 +1,152 @@
+/*
+ * Email CSS Reset
+ * Include these styles in the <style> section of your email templates
+ * Note: Most email clients require inline styles, so these are primarily
+ * for reference and should be inlined using a CSS inliner tool before deployment
+ */
+
+/* Client-specific Resets */
+
+/* Force Outlook to respect line-height */
+body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Prevent Outlook from adding extra spacing */
+table, td {
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+/* Better image rendering in IE */
+img {
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+/* Reset body margins and padding */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Remove default table spacing */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* Prevent WebKit and Windows Mobile from changing default font sizes */
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Remove spacing around images in IE10 */
+img {
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+/* Fix Gmail and Hotmail image issues */
+img {
+    border: 0;
+    height: auto;
+    outline: none;
+    text-decoration: none;
+}
+
+/* Yahoo! Mail list item bullet fix */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+}
+
+/* Outlook link color fix */
+.ExternalClass * {
+    line-height: 100%;
+}
+
+/* Force Outlook.com to display emails at full width */
+.ExternalClass {
+    width: 100%;
+}
+
+/* Prevent Outlook from adding spacing */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+    line-height: 100%;
+}
+
+/* Remove underlines from links in Samsung Mail */
+#MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* Remove rounded corners from iOS buttons */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .email-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .stack-column,
+    .stack-column-center {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .stack-column-center {
+        text-align: center !important;
+    }
+
+    .mobile-center {
+        text-align: center !important;
+    }
+
+    .mobile-padding {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .mobile-full-width {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .mobile-show {
+        display: block !important;
+    }
+}

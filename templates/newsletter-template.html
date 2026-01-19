@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${emailSubject}</title>
+
+    <!-- Marketo Variables -->
+    <meta class="mktoColor" id="brandColor" mktoName="Brand Color" default="#1a73e8">
+    <meta class="mktoColor" id="accentColor" mktoName="Accent Color" default="#fbbc04">
+    <meta class="mktoColor" id="bgColor" mktoName="Background Color" default="#f5f5f5">
+    <meta class="mktoColor" id="bodyTextColor" mktoName="Body Text Color" default="#5f6368">
+    <meta class="mktoColor" id="headingColor" mktoName="Heading Color" default="#202124">
+    <meta class="mktoString" id="fontStack" mktoName="Font Family" default="'Google Sans', Arial, sans-serif">
+    <meta class="mktoBoolean" id="showSocialFooter" mktoName="Show Social Icons" default="true" true_value="table" false_value="none">
+
+    <style type="text/css">
+        /* Reset */
+        body, table, td, p, a, li { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; outline: none; }
+        body { margin: 0; padding: 0; width: 100% !important; }
+
+        /* Links */
+        a { color: ${brandColor}; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Responsive */
+        @media only screen and (max-width: 600px) {
+            .email-container { width: 100% !important; }
+            .stack-column { display: block !important; width: 100% !important; padding: 10px 0 !important; }
+            .mobile-padding { padding: 20px !important; }
+            .mobile-center { text-align: center !important; }
+            .mobile-full-width { width: 100% !important; }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: ${bgColor};">
+    <!-- Preview Text -->
+    <div style="display: none; max-height: 0; overflow: hidden;">
+        <div class="mktoText" id="previewText" mktoName="Preview Text">
+            Your newsletter preview text goes here. Keep it engaging!
+        </div>
+    </div>
+
+    <!-- Email Wrapper -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: ${bgColor};">
+        <tr>
+            <td align="center" style="padding: 20px 10px;">
+
+                <!-- Email Container -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="email-container" style="width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+                    <!-- Header -->
+                    <tr class="mktoModule" id="newsletterHeader" mktoName="Newsletter Header">
+                        <td style="padding: 25px 30px; border-bottom: 3px solid ${brandColor};">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td width="150" valign="middle">
+                                        <div class="mktoImg" id="newsletterLogo" mktoName="Logo" mktoImgWidth="120">
+                                            <a href="https://www.example.com">
+                                                <img src="https://via.placeholder.com/120x35" alt="Logo" style="max-width: 120px; height: auto;">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td valign="middle" style="text-align: right;">
+                                        <div class="mktoText" id="newsletterDate" mktoName="Newsletter Date">
+                                            <span style="font-family: ${fontStack}; font-size: 13px; color: ${bodyTextColor};">
+                                                January 2026 Newsletter
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Hero Article -->
+                    <tr class="mktoModule" id="heroArticle" mktoName="Hero Article">
+                        <td style="padding: 0;">
+                            <div class="mktoImg" id="heroArticleImg" mktoName="Hero Image" mktoImgWidth="600">
+                                <a href="https://www.example.com/article">
+                                    <img src="https://via.placeholder.com/600x280" alt="Featured Article" style="width: 100%; height: auto; display: block;">
+                                </a>
+                            </div>
+                            <div style="padding: 25px 30px;">
+                                <div class="mktoText" id="heroArticleCategory" mktoName="Category Tag">
+                                    <span style="display: inline-block; padding: 4px 12px; background-color: ${accentColor}; color: #202124; font-family: ${fontStack}; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; border-radius: 3px;">
+                                        Featured
+                                    </span>
+                                </div>
+                                <div class="mktoText" id="heroArticleTitle" mktoName="Article Title">
+                                    <h1 style="margin: 15px 0 10px 0; font-family: ${fontStack}; font-size: 26px; line-height: 1.3; color: ${headingColor};">
+                                        <a href="https://www.example.com/article" style="color: ${headingColor}; text-decoration: none;">
+                                            Your Main Newsletter Story Headline Goes Here
+                                        </a>
+                                    </h1>
+                                </div>
+                                <div class="mktoText" id="heroArticleExcerpt" mktoName="Article Excerpt">
+                                    <p style="margin: 0 0 20px 0; font-family: ${fontStack}; font-size: 16px; line-height: 1.6; color: ${bodyTextColor};">
+                                        This is the excerpt for your featured article. Write a compelling summary that encourages readers to click through and read the full story.
+                                    </p>
+                                </div>
+                                <div class="mktoText" id="heroArticleCTA" mktoName="Read More Link">
+                                    <a href="https://www.example.com/article" style="font-family: ${fontStack}; font-size: 14px; font-weight: bold; color: ${brandColor}; text-decoration: none;">
+                                        Read More &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Section Divider -->
+                    <tr class="mktoModule" id="sectionDivider1" mktoName="Section Divider">
+                        <td style="padding: 0 30px;">
+                            <hr style="border: 0; border-top: 1px solid #e8eaed; margin: 0;">
+                        </td>
+                    </tr>
+
+                    <!-- Two Article Grid -->
+                    <tr class="mktoModule" id="articleGrid" mktoName="Article Grid (2 Column)">
+                        <td style="padding: 25px 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <!-- Article 1 -->
+                                    <td class="stack-column" valign="top" width="48%" style="padding-right: 12px;">
+                                        <div class="mktoImg" id="gridArticle1Img" mktoName="Article 1 Image" mktoImgWidth="250">
+                                            <a href="https://www.example.com/article-1">
+                                                <img src="https://via.placeholder.com/250x140" alt="Article 1" style="width: 100%; height: auto; display: block; border-radius: 4px;">
+                                            </a>
+                                        </div>
+                                        <div class="mktoText" id="gridArticle1Content" mktoName="Article 1 Content">
+                                            <h3 style="margin: 12px 0 8px 0; font-family: ${fontStack}; font-size: 16px; line-height: 1.3;">
+                                                <a href="https://www.example.com/article-1" style="color: ${headingColor}; text-decoration: none;">
+                                                    Secondary Story Title One
+                                                </a>
+                                            </h3>
+                                            <p style="margin: 0; font-family: ${fontStack}; font-size: 13px; line-height: 1.5; color: ${bodyTextColor};">
+                                                Brief description of this article.
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <!-- Article 2 -->
+                                    <td class="stack-column" valign="top" width="48%" style="padding-left: 12px;">
+                                        <div class="mktoImg" id="gridArticle2Img" mktoName="Article 2 Image" mktoImgWidth="250">
+                                            <a href="https://www.example.com/article-2">
+                                                <img src="https://via.placeholder.com/250x140" alt="Article 2" style="width: 100%; height: auto; display: block; border-radius: 4px;">
+                                            </a>
+                                        </div>
+                                        <div class="mktoText" id="gridArticle2Content" mktoName="Article 2 Content">
+                                            <h3 style="margin: 12px 0 8px 0; font-family: ${fontStack}; font-size: 16px; line-height: 1.3;">
+                                                <a href="https://www.example.com/article-2" style="color: ${headingColor}; text-decoration: none;">
+                                                    Secondary Story Title Two
+                                                </a>
+                                            </h3>
+                                            <p style="margin: 0; font-family: ${fontStack}; font-size: 13px; line-height: 1.5; color: ${bodyTextColor};">
+                                                Brief description of this article.
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- CTA Banner -->
+                    <tr class="mktoModule" id="ctaBanner" mktoName="CTA Banner">
+                        <td style="padding: 30px; background-color: ${brandColor}; text-align: center;">
+                            <div class="mktoText" id="bannerHeadline" mktoName="Banner Headline">
+                                <h2 style="margin: 0 0 10px 0; font-family: ${fontStack}; font-size: 22px; font-weight: bold; color: #ffffff;">
+                                    Don't Miss Out!
+                                </h2>
+                            </div>
+                            <div class="mktoText" id="bannerText" mktoName="Banner Text">
+                                <p style="margin: 0 0 20px 0; font-family: ${fontStack}; font-size: 15px; color: rgba(255,255,255,0.9);">
+                                    Subscribe to get the latest updates delivered to your inbox.
+                                </p>
+                            </div>
+                            <div class="mktoText" id="bannerButton" mktoName="Banner Button">
+                                <a href="https://www.example.com/subscribe" style="display: inline-block; padding: 12px 28px; background-color: #ffffff; font-family: ${fontStack}; font-size: 14px; font-weight: bold; color: ${brandColor}; text-decoration: none; border-radius: 4px;">
+                                    Subscribe Now
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr class="mktoModule" id="newsletterFooter" mktoName="Newsletter Footer">
+                        <td style="padding: 25px 30px; background-color: #f8f9fa; text-align: center;">
+                            <!-- Social Icons -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="display: ${showSocialFooter}; margin-bottom: 20px;">
+                                <tr>
+                                    <td style="padding: 0 6px;">
+                                        <a href="https://facebook.com"><img src="https://via.placeholder.com/28x28?text=f" alt="Facebook" width="28" height="28" style="border-radius: 50%;"></a>
+                                    </td>
+                                    <td style="padding: 0 6px;">
+                                        <a href="https://twitter.com"><img src="https://via.placeholder.com/28x28?text=t" alt="Twitter" width="28" height="28" style="border-radius: 50%;"></a>
+                                    </td>
+                                    <td style="padding: 0 6px;">
+                                        <a href="https://linkedin.com"><img src="https://via.placeholder.com/28x28?text=in" alt="LinkedIn" width="28" height="28" style="border-radius: 50%;"></a>
+                                    </td>
+                                    <td style="padding: 0 6px;">
+                                        <a href="https://instagram.com"><img src="https://via.placeholder.com/28x28?text=ig" alt="Instagram" width="28" height="28" style="border-radius: 50%;"></a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div class="mktoText" id="footerInfo" mktoName="Footer Info">
+                                <p style="margin: 0 0 10px 0; font-family: ${fontStack}; font-size: 12px; color: ${bodyTextColor};">
+                                    {{system.company}}<br>
+                                    {{system.address}}
+                                </p>
+                                <p style="margin: 0; font-family: ${fontStack}; font-size: 11px; color: #9aa0a6;">
+                                    <a href="{{system.viewAsWebpageLink}}" style="color: #9aa0a6;">View in browser</a> &nbsp;|&nbsp;
+                                    <a href="{{system.unsubscribeLink}}" style="color: #9aa0a6;">Unsubscribe</a> &nbsp;|&nbsp;
+                                    <a href="#" style="color: #9aa0a6;">Preferences</a>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+                <!-- End Email Container -->
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
