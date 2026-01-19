@@ -135,8 +135,16 @@
   <!-- Global Variables -->
   <meta id="copyright-year" class="mktoString" mktoname="Copyright year" default="2026">
 
-  <!-- Header Variables -->
-  <meta id="header__logo-href" class="mktoString" mktoname="Logo Link" default="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
+  <!-- Header - SR Variables -->
+  <meta id="header-sr__logo-href" class="mktoString" mktoname="SR Logo Link" default="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
+  <meta id="header-sr__logo2-href" class="mktoString" mktoname="ITRG Logo Link" default="https://www.infotech.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
+
+  <!-- Header - ITRG Variables -->
+  <meta id="header-itrg__logo-href" class="mktoString" mktoname="ITRG Logo Link" default="https://www.infotech.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
+  <meta id="header-itrg__logo2-href" class="mktoString" mktoname="SR Logo Link" default="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
+
+  <!-- Header - Advisory Variables -->
+  <meta id="header-advisory__logo-href" class="mktoString" mktoname="Advisory Logo Link" default="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
 
   <!-- Typography Module Variables -->
   <meta id="typography__title-href" class="mktoString" mktoname="Title Link" default="#" mktomodulescope="true">
@@ -181,8 +189,114 @@
     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
       <tbody id="template" class="mktoContainer">
 
-        <!-- ==================== HEADER ==================== -->
-        <tr class="mktoModule" id="header" mktoname="Header">
+        <!-- ==================== HEADER - SR ==================== -->
+        <tr class="mktoModule" id="header-sr" mktoname="Header - SR">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+            <div class="header" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
+                <tbody>
+                  <tr>
+                    <td style="direction:ltr;font-size:0;padding:24px 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:150px;"><![endif]-->
+
+                      <div class="mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:150px">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left" style="font-size:0;padding:0;word-break:break-word">
+                                <a href="${header-sr__logo-href}" target="_blank" rel="noopener" style="color:inherit">
+                                  <img alt="SoftwareReviews" src="https://info.softwarereviews.com/rs/353-GFN-093/images/sr-logo-outline-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/SR-logo-outline.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="150" height="auto">
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <!--[if mso | IE]></td><td style="vertical-align:middle;width:370px;"><![endif]-->
+
+                      <div class="mj-outlook-group-fix" style="font-size:0;text-align:right;direction:ltr;display:inline-block;vertical-align:middle;width:calc(100% - 150px)">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="right" style="font-size:0;padding:0;word-break:break-word">
+                                <a href="${header-sr__logo2-href}" target="_blank" rel="noopener" style="color:inherit">
+                                  <img alt="Info-Tech Research Group" src="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="121" height="auto">
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <!--[if mso | IE]></td></tr></table><![endif]-->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!--[if mso | IE]></td></tr></table><![endif]-->
+          </td>
+        </tr>
+
+        <!-- ==================== HEADER - ITRG ==================== -->
+        <tr class="mktoModule" id="header-itrg" mktoname="Header - ITRG">
+          <td style="padding-bottom:16px">
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+            <div class="header" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
+                <tbody>
+                  <tr>
+                    <td style="direction:ltr;font-size:0;padding:24px 40px;text-align:center">
+                      <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:121px;"><![endif]-->
+
+                      <div class="mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:121px">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left" style="font-size:0;padding:0;word-break:break-word">
+                                <a href="${header-itrg__logo-href}" target="_blank" rel="noopener" style="color:inherit">
+                                  <img alt="Info-Tech Research Group" src="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="121" height="auto">
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <!--[if mso | IE]></td><td style="vertical-align:middle;width:399px;"><![endif]-->
+
+                      <div class="mj-outlook-group-fix" style="font-size:0;text-align:right;direction:ltr;display:inline-block;vertical-align:middle;width:calc(100% - 121px)">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="right" style="font-size:0;padding:0;word-break:break-word">
+                                <a href="${header-itrg__logo2-href}" target="_blank" rel="noopener" style="color:inherit">
+                                  <img alt="SoftwareReviews" src="https://info.softwarereviews.com/rs/353-GFN-093/images/sr-logo-outline-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/SR-logo-outline.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="150" height="auto">
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <!--[if mso | IE]></td></tr></table><![endif]-->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!--[if mso | IE]></td></tr></table><![endif]-->
+          </td>
+        </tr>
+
+        <!-- ==================== HEADER - ADVISORY ==================== -->
+        <tr class="mktoModule" id="header-advisory" mktoname="Header - Advisory">
           <td style="padding-bottom:16px">
             <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="header-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
@@ -193,22 +307,14 @@
                     <td style="direction:ltr;font-size:0;padding:24px 40px;text-align:center">
                       <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="mj-column-per-100" style="vertical-align:middle;width:520px;"><![endif]-->
 
-                      <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
+                      <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;text-align:center;direction:ltr;display:inline-block;vertical-align:middle;width:100%">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle" width="100%">
                           <tbody>
                             <tr>
-                              <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:150px">
-                                        <a href="${header__logo-href}" target="_blank" rel="noopener" style="color:inherit">
-                                          <img alt="SoftwareReviews" src="https://info.softwarereviews.com/rs/353-GFN-093/images/sr-logo-outline-2024-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/SR-logo-outline.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="150" height="auto">
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <td align="center" style="font-size:0;padding:0;word-break:break-word">
+                                <a href="${header-advisory__logo-href}" target="_blank" rel="noopener" style="color:inherit">
+                                  <img alt="Info-Tech Research Group / SoftwareReviews Advisory" src="https://info.softwarereviews.com/rs/353-GFN-093/images/advisory-logo-2x.png" srcset="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-sr-advisory-logo.svg" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px" width="256" height="auto">
+                                </a>
                               </td>
                             </tr>
                           </tbody>
@@ -307,11 +413,23 @@
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
                                 <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="typography__content" class="mktoText" mktoname="Content">
-                                  <h1 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:36px;font-weight:600;line-height:1.2;letter-spacing:-0.025em;color:#111827">
-                                    <a href="${typography__title-href}" style="color:#111827;text-decoration:none" target="_blank" rel="noopener">Your Headline Goes Here</a>
+                                  <h1 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:40px;font-weight:700;line-height:1.2;color:#216aa5">
+                                    <a href="${typography__title-href}" style="color:#216aa5;text-decoration:none" target="_blank" rel="noopener">Heading 1 Title</a>
                                   </h1>
+                                  <h2 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:28px;font-weight:300;line-height:1.35;color:#111827">
+                                    Subheading (H2) - Light Weight
+                                  </h2>
+                                  <h3 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:1.35;color:#111827">
+                                    Sub-subheading (H3) - Medium Weight
+                                  </h3>
+                                  <h4 style="margin:0 0 24px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:1.35;color:#111827">
+                                    Lead-In Subheading (H4) - Bold
+                                  </h4>
+                                  <h5 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;line-height:1.35;color:#111827">
+                                    Heading 5 - Small Medium
+                                  </h5>
                                   <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
-                                    This is your introductory paragraph with the refined typography from the v2 style guide. The text is 15px with light weight (300) and generous line height for a sophisticated, readable feel.
+                                    This is your body paragraph with the refined typography from the v2 style guide. The text is 15px with light weight (300) and generous line height for a sophisticated, readable feel.
                                   </p>
                                 </div>
                               </td>
@@ -331,12 +449,12 @@
           </td>
         </tr>
 
-        <!-- ==================== TYPOGRAPHY - ACCENT HEADING ==================== -->
-        <tr class="mktoModule" id="typography-accent" mktoname="Typography - Accent Heading">
+        <!-- ==================== TYPOGRAPHY - BLUE HEADING ==================== -->
+        <tr class="mktoModule" id="typography-blue" mktoname="Typography - Blue Heading">
           <td style="padding-bottom:16px">
-            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="typography-accent-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="typography-blue-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-            <div class="typography-accent" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
+            <div class="typography-blue" style="background:#ffffff;background-color:#ffffff;margin:0 auto;max-width:600px">
               <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                 <tbody>
                   <tr>
@@ -348,12 +466,12 @@
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="typography-accent__content" class="mktoText" mktoname="Content">
-                                  <h1 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:36px;font-weight:600;line-height:1.2;letter-spacing:-0.025em;color:#0891B2">
-                                    Accent Color Headline
+                                <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="typography-blue__content" class="mktoText" mktoname="Content">
+                                  <h1 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:40px;font-weight:700;line-height:1.2;color:#216aa5">
+                                    Blue Heading Style
                                   </h1>
                                   <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
-                                    Use the accent cyan for headings when you want to draw attention or add visual interest. The dark cyan (#0891B2) is accessible for text use.
+                                    Use the ITRG blue (#216aa5) for headings when you want to draw attention or add visual interest. This color is accessible for text use and consistent with the Info-Tech brand.
                                   </p>
                                 </div>
                               </td>
@@ -426,7 +544,7 @@
           </td>
         </tr>
 
-        <!-- ==================== FLOATING CARD - BRAND (DARK CYAN) ==================== -->
+        <!-- ==================== FLOATING CARD - BRAND (ITRG BLUE) ==================== -->
         <tr class="mktoModule" id="card-brand" mktoname="Floating Card - Brand">
           <td style="padding-bottom:16px">
             <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-brand-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
@@ -443,7 +561,7 @@
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0891B2;background-color:#0891B2;width:100%;border-radius:20px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#216aa5;background-color:#216aa5;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
                                       <td style="padding:36px 40px">
@@ -452,7 +570,7 @@
                                             <a href="${card-brand__title-href}" style="color:#ffffff;text-decoration:none" target="_blank" rel="noopener">Featured Content</a>
                                           </h2>
                                           <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#ffffff;margin:0">
-                                            This brand card uses the dark cyan (#0891B2) with white text. Use it to highlight key messages or calls to action that need emphasis.
+                                            This brand card uses the ITRG blue (#216aa5) with white text. Use it to highlight key messages or calls to action that need emphasis.
                                           </p>
                                         </div>
                                       </td>
@@ -476,7 +594,7 @@
           </td>
         </tr>
 
-        <!-- ==================== FLOATING CARD - ACCENT (LIGHT CYAN) ==================== -->
+        <!-- ==================== FLOATING CARD - ACCENT (LIGHT BLUE) ==================== -->
         <tr class="mktoModule" id="card-accent" mktoname="Floating Card - Accent">
           <td style="padding-bottom:16px">
             <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-accent-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
@@ -493,16 +611,16 @@
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0;padding:0;word-break:break-word">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#E0F7FA;background-color:#E0F7FA;width:100%;border-radius:20px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#e8f4f8;background-color:#e8f4f8;width:100%;border-radius:20px">
                                   <tbody>
                                     <tr>
                                       <td style="padding:36px 40px">
                                         <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="card-accent__content" class="mktoText" mktoname="Card Content">
-                                          <h2 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:26px;font-weight:500;line-height:1.3;letter-spacing:-0.02em;color:#065663">
-                                            <a href="${card-accent__title-href}" style="color:#065663;text-decoration:none" target="_blank" rel="noopener">Subtle Highlight</a>
+                                          <h2 style="margin:0 0 16px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:26px;font-weight:500;line-height:1.3;letter-spacing:-0.02em;color:#216aa5">
+                                            <a href="${card-accent__title-href}" style="color:#216aa5;text-decoration:none" target="_blank" rel="noopener">Subtle Highlight</a>
                                           </h2>
                                           <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:#374151;margin:0">
-                                            This accent card uses a light cyan tint (#E0F7FA) for subtle highlighting without the full brand color. Great for tips, notes, or secondary callouts.
+                                            This accent card uses a light blue tint (#e8f4f8) for subtle highlighting without the full brand color. Great for tips, notes, or secondary callouts.
                                           </p>
                                         </div>
                                       </td>
@@ -562,8 +680,8 @@
                                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                                   <tbody>
                                                     <tr>
-                                                      <td align="center" bgcolor="#91E6F7" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#91E6F7" valign="middle">
-                                                        <a href="${card-with-button__button-href}" style="display:inline-block;background:#91E6F7;color:#065663;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${card-with-button__button}</a>
+                                                      <td align="center" bgcolor="#216aa5" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#216aa5" valign="middle">
+                                                        <a href="${card-with-button__button-href}" style="display:inline-block;background:#216aa5;color:#ffffff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${card-with-button__button}</a>
                                                       </td>
                                                     </tr>
                                                   </tbody>
@@ -593,7 +711,7 @@
           </td>
         </tr>
 
-        <!-- ==================== BUTTON - PRIMARY (BRIGHT CYAN) ==================== -->
+        <!-- ==================== BUTTON - PRIMARY (ITRG BLUE) ==================== -->
         <tr class="mktoModule" id="button-primary" mktoname="Button - Primary">
           <td style="padding-bottom:16px">
             <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-primary-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
@@ -613,8 +731,8 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                   <tbody>
                                     <tr>
-                                      <td align="center" bgcolor="#91E6F7" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#91E6F7" valign="middle">
-                                        <a href="${button-primary__button-href}" style="display:inline-block;background:#91E6F7;color:#065663;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-primary__button}</a>
+                                      <td align="center" bgcolor="#216aa5" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#216aa5" valign="middle">
+                                        <a href="${button-primary__button-href}" style="display:inline-block;background:#216aa5;color:#ffffff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-primary__button}</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -636,7 +754,7 @@
           </td>
         </tr>
 
-        <!-- ==================== BUTTON - SECONDARY (DARK CYAN) ==================== -->
+        <!-- ==================== BUTTON - SECONDARY (ITRG BLUE) ==================== -->
         <tr class="mktoModule" id="button-secondary" mktoname="Button - Secondary">
           <td style="padding-bottom:16px">
             <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-secondary-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
@@ -656,8 +774,8 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                   <tbody>
                                     <tr>
-                                      <td align="center" bgcolor="#0891B2" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#0891B2" valign="middle">
-                                        <a href="${button-secondary__button-href}" style="display:inline-block;background:#0891B2;color:#ffffff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-secondary__button}</a>
+                                      <td align="center" bgcolor="#216aa5" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#216aa5" valign="middle">
+                                        <a href="${button-secondary__button-href}" style="display:inline-block;background:#216aa5;color:#ffffff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-secondary__button}</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -699,8 +817,8 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                   <tbody>
                                     <tr>
-                                      <td align="center" bgcolor="#FFFFFF" role="presentation" style="border:solid 2px #0891B2;border-radius:50px;cursor:auto;mso-padding-alt:10px 22px;background:#ffffff" valign="middle">
-                                        <a href="${button-outline__button-href}" style="display:inline-block;background:#ffffff;color:#0891B2;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:10px 22px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-outline__button}</a>
+                                      <td align="center" bgcolor="#FFFFFF" role="presentation" style="border:solid 2px #216aa5;border-radius:50px;cursor:auto;mso-padding-alt:10px 22px;background:#ffffff" valign="middle">
+                                        <a href="${button-outline__button-href}" style="display:inline-block;background:#ffffff;color:#216aa5;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:10px 22px;mso-padding-alt:0;border-radius:50px" target="_blank">${button-outline__button}</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -841,8 +959,8 @@
                                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%">
                                           <tbody>
                                             <tr>
-                                              <td align="center" bgcolor="#91E6F7" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#91E6F7" valign="middle">
-                                                <a href="${two-col-text-button__button-href}" style="display:inline-block;background:#91E6F7;color:#065663;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${two-col-text-button__button}</a>
+                                              <td align="center" bgcolor="#216aa5" role="presentation" style="border:none;border-radius:50px;cursor:auto;mso-padding-alt:12px 24px;background:#216aa5" valign="middle">
+                                                <a href="${two-col-text-button__button-href}" style="display:inline-block;background:#216aa5;color:#ffffff;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1;margin:0;text-decoration:none;text-transform:none;padding:12px 24px;mso-padding-alt:0;border-radius:50px" target="_blank">${two-col-text-button__button}</a>
                                               </td>
                                             </tr>
                                           </tbody>
@@ -1022,7 +1140,7 @@
                                     <tr>
                                       <td style="padding:28px 32px">
                                         <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="two-col-cards__card1" class="mktoText" mktoname="Card 1 Content">
-                                          <h4 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;line-height:1.4;color:#0891B2">
+                                          <h4 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;line-height:1.4;color:#216aa5">
                                             Card One
                                           </h4>
                                           <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:300;line-height:1.6;color:#374151;margin:0">
@@ -1051,7 +1169,7 @@
                                     <tr>
                                       <td style="padding:28px 32px">
                                         <div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;line-height:1.7;text-align:left;color:#374151" id="two-col-cards__card2" class="mktoText" mktoname="Card 2 Content">
-                                          <h4 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;line-height:1.4;color:#0891B2">
+                                          <h4 style="margin:0 0 8px 0;font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;line-height:1.4;color:#216aa5">
                                             Card Two
                                           </h4>
                                           <p style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:300;line-height:1.6;color:#374151;margin:0">
