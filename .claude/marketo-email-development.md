@@ -2,24 +2,70 @@
 
 This document contains all functional best practices, rendering techniques, security practices, and Marketo-specific syntax for building email templates. Reference this guide when creating or modifying any email template.
 
+**Important:** This guide covers the *functional/technical* aspects of email development. For *visual styling* (colors, typography, spacing, components), refer to the active style guide in `.claude/styles/`.
+
 ---
 
 ## Table of Contents
 
-1. [Document Structure](#document-structure)
-2. [Email Client Compatibility](#email-client-compatibility)
-3. [Outlook & Microsoft Conditional Comments](#outlook--microsoft-conditional-comments)
-4. [CSS Reset & Client Fixes](#css-reset--client-fixes)
-5. [Table-Based Layout](#table-based-layout)
-6. [Typography & Fonts](#typography--fonts)
-7. [Images](#images)
-8. [Buttons](#buttons)
-9. [Responsive Design](#responsive-design)
-10. [Marketo Syntax](#marketo-syntax)
-11. [Accessibility](#accessibility)
-12. [Security Practices](#security-practices)
-13. [Module Naming Conventions](#module-naming-conventions)
-14. [Testing & Validation](#testing--validation)
+1. [Using Style Guides](#using-style-guides)
+2. [Document Structure](#document-structure)
+3. [Email Client Compatibility](#email-client-compatibility)
+4. [Outlook & Microsoft Conditional Comments](#outlook--microsoft-conditional-comments)
+5. [CSS Reset & Client Fixes](#css-reset--client-fixes)
+6. [Table-Based Layout](#table-based-layout)
+7. [Typography & Fonts](#typography--fonts)
+8. [Images](#images)
+9. [Buttons](#buttons)
+10. [Responsive Design](#responsive-design)
+11. [Marketo Syntax](#marketo-syntax)
+12. [Accessibility](#accessibility)
+13. [Security Practices](#security-practices)
+14. [Module Naming Conventions](#module-naming-conventions)
+15. [Testing & Validation](#testing--validation)
+
+---
+
+## Using Style Guides
+
+This development guide is paired with **versioned style guides** that define the visual aspects of templates.
+
+### File Structure
+
+```
+.claude/
+├── marketo-email-development.md    # This file (functional/technical)
+└── styles/
+    ├── README.md                   # How to use style versions
+    ├── v1.md                       # Style guide version 1 (active)
+    ├── v2.md                       # Future iterations...
+    └── ...
+```
+
+### What Each Guide Covers
+
+| Guide | Contents |
+|-------|----------|
+| **Development Guide** (this file) | HTML structure, email client compatibility, MSO conditionals, CSS resets, table layouts, Marketo syntax, accessibility, security |
+| **Style Guide** (styles/vX.md) | Colors, typography, spacing, border radius, button styles, component designs, module catalog, image assets |
+
+### How to Use
+
+When building a template:
+
+1. **Always follow this development guide** for technical implementation
+2. **Reference the specified style guide version** for visual styling
+3. **If no version specified**, use the latest/active version
+
+### Requesting a Specific Version
+
+Specify the style version in your request:
+
+> "Build a newsletter template using **style guide v1**"
+
+Or to iterate on styles:
+
+> "Create **style guide v2** based on v1 with these changes: [list changes]"
 
 ---
 
@@ -811,12 +857,15 @@ Test in this order:
 ```
 project/
 ├── .claude/
-│   ├── marketo-email-development.md  (this file)
-│   └── style-guide.md                (brand styles)
-├── templates/                         (complete templates)
-├── modules/                           (reusable modules)
-├── components/                        (shared elements)
+│   ├── marketo-email-development.md  (this file - functional guide)
+│   └── styles/
+│       ├── README.md                 (how to use versions)
+│       ├── v1.md                     (style guide v1)
+│       ├── v2.md                     (future versions...)
+│       └── ...
+├── templates/                         (complete email templates)
+├── modules/                           (reusable Marketo modules)
 ├── assets/
-│   └── images/
-└── docs/                             (additional documentation)
+│   └── images/                       (image assets)
+└── README.md                         (project overview)
 ```

@@ -5,75 +5,66 @@ A repository for building and managing Marketo email templates with HTML.
 ## Project Structure
 
 ```
-├── .claude/                    # Development guidelines
+├── .claude/                           # Development guidelines
 │   ├── marketo-email-development.md   # Functional best practices & Marketo syntax
-│   └── style-guide.md                 # Brand style guidelines (WIP)
-├── templates/                  # Complete email templates (to be created)
-├── modules/                    # Reusable Marketo modules (to be created)
+│   └── styles/                        # Versioned style guides
+│       ├── README.md                  # How to use style versions
+│       └── v1.md                      # Style guide v1 (active)
+├── templates/                         # Complete email templates (to be created)
+├── modules/                           # Reusable Marketo modules (to be created)
 ├── assets/
-│   └── images/                 # Image assets
+│   └── images/                        # Image assets
 └── README.md
 ```
 
-## Development Guidelines
+## Development System
 
-### Skill Files (`.claude/`)
+This repository uses a two-part guide system:
 
-This repository uses skill files to maintain consistency when building email templates:
+### 1. Functional Development Guide (`.claude/marketo-email-development.md`)
 
-1. **`marketo-email-development.md`** - Comprehensive guide covering:
-   - Document structure and required elements
-   - Email client compatibility (Outlook, Gmail, Apple Mail, etc.)
-   - MSO conditional comments for Outlook
-   - CSS reset and client-specific fixes
-   - Table-based layout patterns
-   - Typography and web font loading
-   - Image best practices
-   - Bulletproof button patterns
-   - Responsive design techniques
-   - Marketo-specific syntax (modules, variables, editable regions)
-   - Accessibility requirements
-   - Security practices
-   - Module naming conventions
-   - Testing and validation checklist
+Covers all technical aspects of email development:
+- Document structure and required elements
+- Email client compatibility (Outlook, Gmail, Apple Mail, etc.)
+- MSO conditional comments for Outlook
+- CSS reset and client-specific fixes
+- Table-based layout patterns
+- Typography and web font loading
+- Image best practices
+- Bulletproof button patterns
+- Responsive design techniques
+- Marketo-specific syntax
+- Accessibility requirements
+- Security practices
+- Testing and validation checklist
 
-2. **`style-guide.md`** - Brand style guidelines including:
-   - Brand colors
-   - Typography scale
-   - Spacing system
-   - Component styles
-   - Image guidelines
+### 2. Style Guides (`.claude/styles/`)
 
-## Key Technical Features
+Versioned visual style definitions:
+- Brand colors and usage
+- Typography scale (fonts, sizes, weights)
+- Spacing system
+- Layout grid and column widths
+- Border radius values
+- Component styles (buttons, dividers, etc.)
+- Module catalog
+- Image assets and URLs
 
-Based on our existing template architecture:
+## Style Guide Versions
 
-### Email Client Compatibility
-- Full Outlook support via VML and MSO conditionals
-- Gmail, Apple Mail, Yahoo Mail optimization
-- Mobile-responsive design
+| Version | File | Status | Description |
+|---------|------|--------|-------------|
+| v1 | `styles/v1.md` | **Active** | Initial version from existing SR/ITRG template |
 
-### Marketo Integration
-- Module-based architecture (`mktoModule`)
-- Editable text regions (`mktoText`)
-- Editable images (`mktoImg`)
-- Template variables (`mktoString`, `mktoColor`, etc.)
-- Module-scoped variables for repeatable sections
+### Creating New Versions
 
-### Best Practices Implemented
-- Bulletproof buttons that work in all clients
-- Web fonts with proper fallbacks
-- Accessibility compliance (ARIA, semantic structure)
-- Security (rel="noopener", HTTPS only)
-- 600px container width standard
+To iterate on styles, request a new version:
 
-## Quick Reference
+> "Create style guide v2 based on v1 with [your changes]"
 
-### Standard Dimensions
-- Container width: 600px
-- Content padding: 24px 47px
-- Button padding: 12px 22px
-- Border radius: 5px (buttons), 20px (cards)
+Previous versions are preserved for reference or rollback.
+
+## Quick Reference (from v1)
 
 ### Brand Colors
 - SR Green: `#24842e`
@@ -81,9 +72,15 @@ Based on our existing template architecture:
 - Grey background: `#f6f6f6`
 - Outer background: `#ededed`
 
-### Font Stack
+### Typography
 - Headings: `Montserrat, Helvetica, Arial, sans-serif`
 - Body: `Roboto, Helvetica, Arial, sans-serif`
+
+### Dimensions
+- Container width: 600px
+- Content padding: 24px 47px
+- Button padding: 12px 22px
+- Border radius: 5px (buttons), 20px (cards)
 
 ## Resources
 
