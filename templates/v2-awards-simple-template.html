@@ -138,9 +138,6 @@
   <meta id="award-info__award-type" class="mktoString" mktoname="Award Type" default="CHAMPION STATUS" mktomodulescope="true">
   <meta id="award-info__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
   <meta id="award-info__button" class="mktoString" mktoname="Button Text" default="Claim Your Award(s)" mktomodulescope="true">
-  <meta id="award-info__champion-count" class="mktoString" mktoname="Champion Awards Count" default="-" mktomodulescope="true">
-  <meta id="award-info__leader-count" class="mktoString" mktoname="Leader Awards Count" default="-" mktomodulescope="true">
-  <meta id="award-info__other-count" class="mktoString" mktoname="Other Awards Count" default="-" mktomodulescope="true">
 
 </head>
 
@@ -281,7 +278,7 @@
                                               <!-- Champion Awards -->
                                               <td align="center" style="width:33.33%;vertical-align:top">
                                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#ffffff">
-                                                  ${award-info__champion-count}
+                                                  {{company.Champion Awards in Last Month:default=-}}
                                                 </div>
                                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#66C3D5;padding-top:8px">
                                                   Champion<br>Award(s)
@@ -290,7 +287,7 @@
                                               <!-- Leader Awards -->
                                               <td align="center" style="width:33.33%;vertical-align:top">
                                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#ffffff">
-                                                  ${award-info__leader-count}
+                                                  {{company.Leader Awards in Last Month:default=-}}
                                                 </div>
                                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#66C3D5;padding-top:8px">
                                                   Leader<br>Award(s)
@@ -299,7 +296,7 @@
                                               <!-- Other Awards -->
                                               <td align="center" style="width:33.33%;vertical-align:top">
                                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#ffffff">
-                                                  ${award-info__other-count}
+                                                  {{company.Other Awards in Last Month:default=-}}
                                                 </div>
                                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#66C3D5;padding-top:8px">
                                                   Secondary<br>Award(s)
