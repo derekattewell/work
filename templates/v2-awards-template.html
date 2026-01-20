@@ -174,14 +174,7 @@
   <meta id="three-col-steps__step3-href" class="mktoString" mktoname="Step 3 Link" default="#" mktomodulescope="true">
 
   <!-- Award Info Module Variables -->
-  <meta id="award-info__company-name" class="mktoString" mktoname="Company Name" default="ADOBE" mktomodulescope="true">
   <meta id="award-info__award-type" class="mktoString" mktoname="Award Type" default="CHAMPION STATUS" mktomodulescope="true">
-  <meta id="award-info__month-year" class="mktoString" mktoname="Month Year" default="July 2025" mktomodulescope="true">
-  <meta id="award-info__num-products" class="mktoString" mktoname="Number of Products" default="3" mktomodulescope="true">
-  <meta id="award-info__num-categories" class="mktoString" mktoname="Number of Categories" default="4" mktomodulescope="true">
-  <meta id="award-info__champion-count" class="mktoString" mktoname="Champion Awards Count" default="2" mktomodulescope="true">
-  <meta id="award-info__leader-count" class="mktoString" mktoname="Leader Awards Count" default="1" mktomodulescope="true">
-  <meta id="award-info__secondary-count" class="mktoString" mktoname="Secondary Awards Count" default="12" mktomodulescope="true">
   <meta id="award-info__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
   <meta id="award-info__button" class="mktoString" mktoname="Button Text" default="Claim Your Award(s)" mktomodulescope="true">
 
@@ -273,7 +266,7 @@
                             <tr>
                               <td align="center" style="font-size:0;padding:0 0 32px 0;word-break:break-word">
                                 <div id="award-info__badge" class="mktoImg" mktoName="Award Badge" mktoLockImgStyle="true" mktoImgWidth="200" mktoImgHeight="auto">
-                                  <img alt="Award Badge" src="https://info.softwarereviews.com/rs/353-GFN-093/images/placeholder-badge.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:200px;max-width:200px;font-size:13px;margin:0 auto" width="200" height="auto">
+                                  <img alt="Award Badge" src="https://info.softwarereviews.com/rs/353-GFN-093/images/ChatGPT%20Image%20Jul%2010%2C%202025%2C%2003_00_25%20PM.png" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:200px;max-width:200px;font-size:13px;margin:0 auto" width="200" height="auto">
                                 </div>
                               </td>
                             </tr>
@@ -281,7 +274,7 @@
                             <tr>
                               <td align="center" style="font-size:0;padding:0 0 8px 0;word-break:break-word">
                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-align:center;color:#ffffff">
-                                  ${award-info__company-name}
+                                  {{company.Company Name}}
                                 </div>
                               </td>
                             </tr>
@@ -305,7 +298,7 @@
                             <tr>
                               <td align="center" style="font-size:0;padding:0 0 32px 0;word-break:break-word">
                                 <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:1.4;text-align:center;color:#ffffff">
-                                  In <span style="color:#7DD3FC">${award-info__month-year}</span>, <span style="color:#7DD3FC">${award-info__company-name}</span> has <span style="color:#7DD3FC">${award-info__num-products}</span> product(s)<br>in <span style="color:#7DD3FC">${award-info__num-categories}</span> categories winning:
+                                  In <span style="color:#7DD3FC">{{system.date}}</span>, <span style="color:#7DD3FC">{{company.Company Name}}</span> has <span style="color:#7DD3FC">{{company.Offerings Awarded in Last Month}}</span> product(s)<br>in <span style="color:#7DD3FC">{{company.Categories Awarded in Last Month}}</span> categories winning:
                                 </div>
                               </td>
                             </tr>
@@ -318,7 +311,7 @@
                                       <!-- Champion Awards -->
                                       <td align="center" style="width:33.33%;vertical-align:top">
                                         <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#7DD3FC">
-                                          ${award-info__champion-count}
+                                          {{company.Champion Awards in Last Month}}
                                         </div>
                                         <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#7DD3FC;padding-top:8px">
                                           Champion<br>Award(s)
@@ -327,16 +320,16 @@
                                       <!-- Leader Awards -->
                                       <td align="center" style="width:33.33%;vertical-align:top">
                                         <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#7DD3FC">
-                                          ${award-info__leader-count}
+                                          {{company.Leader Awards in Last Month}}
                                         </div>
                                         <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#7DD3FC;padding-top:8px">
                                           Leader<br>Award(s)
                                         </div>
                                       </td>
-                                      <!-- Secondary Awards -->
+                                      <!-- Other Awards -->
                                       <td align="center" style="width:33.33%;vertical-align:top">
                                         <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#7DD3FC">
-                                          ${award-info__secondary-count}
+                                          {{company.Other Awards in Last Month}}
                                         </div>
                                         <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#7DD3FC;padding-top:8px">
                                           Secondary<br>Award(s)
