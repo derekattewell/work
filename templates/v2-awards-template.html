@@ -175,7 +175,6 @@
 
   <!-- Award Info Module Variables -->
   <meta id="award-info__award-type" class="mktoString" mktoname="Award Type" default="CHAMPION STATUS" mktomodulescope="true">
-  <meta id="award-info__date" class="mktoString" mktoname="Award Date" default="January 2026" mktomodulescope="true">
   <meta id="award-info__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
   <meta id="award-info__button" class="mktoString" mktoname="Button Text" default="Claim Your Award(s)" mktomodulescope="true">
 
@@ -305,7 +304,7 @@
                                     <tr>
                                       <td align="center" style="font-size:0;padding:0 0 32px 0;word-break:break-word">
                                         <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:1.4;text-align:center;color:#67e8f9">
-                                          In <span style="color:#ffffff">${award-info__date}</span>, <span style="color:#ffffff">{{company.Company Name}}</span> has <span style="color:#ffffff">{{company.Offerings Awarded in Last Month}}</span> product(s)<br>in <span style="color:#ffffff">{{company.Categories Awarded in Last Month}}</span> categories winning:
+                                          In <span style="color:#ffffff">$date.format('MMMM', $date.calendar.time)</span>, <span style="color:#ffffff">{{company.Company Name}}</span> has <span style="color:#ffffff">{{company.Offerings Awarded in Last Month}}</span> product(s)<br>in <span style="color:#ffffff">{{company.Categories Awarded in Last Month}}</span> categories winning:
                                         </div>
                                       </td>
                                     </tr>
