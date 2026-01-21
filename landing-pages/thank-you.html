@@ -4,16 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Thank You</title>
+  <title>Thank You | Info-Tech Research Group</title>
 
   <!-- Marketo Landing Page Variables -->
   <meta class="mktoString" id="pageTitle" mktoName="Page Title" default="Thank You">
-  <meta class="mktoString" id="heroHeadline" mktoName="Hero Headline" default="Thank You!">
-  <meta class="mktoString" id="heroSubheadline" mktoName="Hero Subheadline" default="We've received your request.">
-  <meta class="mktoString" id="ctaButtonText" mktoName="CTA Button Text" default="Explore Our Research">
-  <meta class="mktoString" id="ctaButtonUrl" mktoName="CTA Button URL" default="https://www.infotech.com/research?utm_source=marketo&utm_medium=landing-page">
-  <meta class="mktoBoolean" id="showCta" mktoName="Show CTA Button" default="true" false_value="false" true_value="true">
-  <meta class="mktoBoolean" id="showExpectations" mktoName="Show What to Expect Section" default="true" false_value="false" true_value="true">
   <meta class="mktoString" id="copyrightYear" mktoName="Copyright Year" default="2026">
 
   <!-- Google Fonts -->
@@ -25,6 +19,10 @@
     /* ==================== CSS Reset ==================== */
     *, *::before, *::after {
       box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
     }
 
     html {
@@ -39,8 +37,6 @@
       font-size: 16px;
       font-weight: 300;
       line-height: 1.7;
-      color: #374151;
-      background-color: #f5f5f5;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -52,7 +48,6 @@
     }
 
     a {
-      color: #216aa5;
       text-decoration: none;
     }
 
@@ -60,7 +55,6 @@
       text-decoration: underline;
     }
 
-    /* ==================== Typography ==================== */
     h1, h2, h3, h4, h5 {
       font-family: 'Montserrat', Helvetica, Arial, sans-serif;
       margin: 0;
@@ -71,465 +65,267 @@
       margin: 0;
     }
 
-    /* ==================== Layout ==================== */
-    .page-wrapper {
+    /* ==================== Page Layout ==================== */
+    .page {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      padding: 32px 16px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 32px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+      background: linear-gradient(180deg, #0d3a5c 0%, #1a5a8a 50%, #2a7ab5 100%);
     }
 
     /* ==================== Header ==================== */
     .header {
-      padding: 32px 48px 24px;
+      padding: 40px 24px 0;
       text-align: center;
     }
 
     .header__logo {
-      width: 120px;
-      height: auto;
+      height: 40px;
+      width: auto;
     }
 
-    /* ==================== Hero Section ==================== */
-    .hero {
-      padding: 24px 48px 48px;
+    /* ==================== Main Content ==================== */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px 60px;
       text-align: center;
     }
 
     .hero__icon {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 32px;
-      background-color: #e8f4f8;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      margin-bottom: 40px;
     }
 
-    .hero__icon svg {
-      width: 40px;
-      height: 40px;
-      color: #216aa5;
+    .hero__icon img {
+      width: 180px;
+      height: auto;
     }
 
     .hero__headline {
-      font-size: 40px;
+      font-size: 56px;
       font-weight: 700;
-      color: #216aa5;
-      margin-bottom: 16px;
-    }
-
-    .hero__subheadline {
-      font-size: 20px;
-      font-weight: 300;
-      color: #111827;
+      color: #ffffff;
       margin-bottom: 24px;
+      letter-spacing: -0.02em;
     }
 
     .hero__message {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.7;
-      color: #374151;
-      max-width: 480px;
-      margin: 0 auto;
-    }
-
-    /* ==================== Expectations Card ==================== */
-    .expectations {
-      padding: 0 32px 32px;
-    }
-
-    .expectations__card {
-      background-color: #f7f7f7;
-      border-radius: 20px;
-      padding: 32px 40px;
-    }
-
-    .expectations__title {
-      font-size: 18px;
-      font-weight: 600;
-      color: #111827;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .expectations__list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .expectations__item {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 12px 0;
-    }
-
-    .expectations__item:not(:last-child) {
-      border-bottom: 1px solid #E5E7EB;
-    }
-
-    .expectations__number {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      background-color: #216aa5;
-      color: #ffffff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .expectations__text {
-      font-size: 15px;
+      font-size: 20px;
       font-weight: 300;
       line-height: 1.6;
-      color: #374151;
-      padding-top: 3px;
-    }
-
-    /* ==================== CTA Section ==================== */
-    .cta-section {
-      padding: 16px 48px 48px;
-      text-align: center;
-    }
-
-    .cta-section__text {
-      font-size: 15px;
-      font-weight: 300;
-      color: #6B7280;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 32px;
-      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 1;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: all 0.2s ease;
-      cursor: pointer;
-    }
-
-    .btn--primary {
-      background-color: #216aa5;
-      color: #ffffff;
-    }
-
-    .btn--primary:hover {
-      background-color: #1a5585;
-      text-decoration: none;
-    }
-
-    .btn--secondary {
-      background-color: #5a9bc7;
-      color: #ffffff;
-    }
-
-    .btn--secondary:hover {
-      background-color: #4a8ab6;
-      text-decoration: none;
-    }
-
-    .btn--outline {
-      background-color: #ffffff;
-      color: #216aa5;
-      border: 2px solid #216aa5;
-    }
-
-    .btn--outline:hover {
-      background-color: #e8f4f8;
-      text-decoration: none;
+      color: #7eb8e2;
+      max-width: 540px;
+      margin: 0 auto;
     }
 
     /* ==================== Footer ==================== */
     .footer {
-      padding: 32px 48px 40px;
-      border-top: 1px solid #E5E7EB;
-      text-align: center;
+      background-color: #ffffff;
+      border-radius: 24px 24px 0 0;
+      padding: 32px 40px;
+      margin: 0 16px;
     }
 
-    .footer__social {
+    .footer__inner {
+      max-width: 1000px;
+      margin: 0 auto;
       display: flex;
-      justify-content: center;
-      gap: 32px;
-      margin-bottom: 24px;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
     }
 
-    .footer__social-link {
-      display: block;
-      width: 28px;
-      height: 28px;
-      opacity: 0.6;
-      transition: opacity 0.2s ease;
+    @media screen and (min-width: 768px) {
+      .footer__inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+      }
     }
 
-    .footer__social-link:hover {
-      opacity: 1;
+    .footer__brand {
+      display: flex;
+      align-items: center;
+      gap: 24px;
     }
 
-    .footer__social-icon {
-      width: 100%;
-      height: auto;
-    }
-
-    .footer__links {
-      font-size: 12px;
-      color: #9CA3AF;
-      margin-bottom: 20px;
-    }
-
-    .footer__links a {
-      color: #9CA3AF;
-      text-decoration: underline;
-    }
-
-    .footer__links a:hover {
-      color: #6B7280;
+    .footer__logo {
+      height: 32px;
+      width: auto;
     }
 
     .footer__divider {
-      padding: 0 8px;
-      color: #E5E7EB;
+      width: 1px;
+      height: 40px;
+      background-color: #d1d5db;
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      .footer__divider {
+        display: block;
+      }
+    }
+
+    .footer__logo--sr {
+      height: 48px;
+      width: auto;
     }
 
     .footer__copyright {
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 400;
-      line-height: 1.6;
-      color: #9CA3AF;
+      line-height: 1.5;
+      color: #6b7280;
+      text-align: center;
     }
 
-    .footer__copyright p {
-      margin-bottom: 6px;
+    @media screen and (min-width: 768px) {
+      .footer__copyright {
+        text-align: right;
+      }
     }
 
-    .footer__copyright p:last-child {
-      margin-bottom: 0;
+    .footer__copyright a {
+      color: #6b7280;
+      text-decoration: underline;
+    }
+
+    .footer__copyright a:hover {
+      color: #374151;
     }
 
     /* ==================== Responsive ==================== */
     @media screen and (max-width: 640px) {
-      .page-wrapper {
-        padding: 16px 12px;
-      }
-
-      .container {
-        border-radius: 24px;
-      }
-
       .header {
-        padding: 24px 24px 20px;
+        padding: 32px 20px 0;
       }
 
-      .hero {
-        padding: 20px 24px 40px;
-      }
-
-      .hero__icon {
-        width: 64px;
-        height: 64px;
-        margin-bottom: 24px;
-      }
-
-      .hero__icon svg {
-        width: 32px;
+      .header__logo {
         height: 32px;
       }
 
-      .hero__headline {
-        font-size: 32px;
+      .main {
+        padding: 32px 20px 48px;
       }
 
-      .hero__subheadline {
-        font-size: 18px;
+      .hero__icon {
+        margin-bottom: 32px;
+      }
+
+      .hero__icon img {
+        width: 140px;
+      }
+
+      .hero__headline {
+        font-size: 40px;
+        margin-bottom: 20px;
       }
 
       .hero__message {
-        font-size: 15px;
-      }
-
-      .expectations {
-        padding: 0 20px 24px;
-      }
-
-      .expectations__card {
-        padding: 24px 28px;
-      }
-
-      .expectations__title {
-        font-size: 16px;
-      }
-
-      .expectations__text {
-        font-size: 14px;
-      }
-
-      .cta-section {
-        padding: 12px 24px 40px;
+        font-size: 17px;
       }
 
       .footer {
-        padding: 24px 24px 32px;
+        margin: 0 12px;
+        padding: 24px 20px;
+        border-radius: 20px 20px 0 0;
       }
 
-      .footer__links {
-        line-height: 2;
+      .footer__brand {
+        flex-direction: column;
+        gap: 16px;
       }
 
-      .footer__divider {
-        display: none;
+      .footer__logo {
+        height: 28px;
       }
 
-      .footer__links a {
-        display: inline-block;
-        padding: 4px 8px;
+      .footer__logo--sr {
+        height: 40px;
+      }
+
+      .footer__copyright {
+        font-size: 12px;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="page-wrapper">
-    <main class="container">
+  <div class="page">
 
-      <!-- Header -->
-      <header class="header">
-        <a href="https://www.infotech.com/?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener">
+    <!-- Header -->
+    <header class="header">
+      <a href="https://www.infotech.com/?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener">
+        <img
+          src="https://info.softwarereviews.com/rs/353-GFN-093/images/ITRG-logo-white.svg"
+          alt="Info-Tech Research Group"
+          class="header__logo"
+          id="headerLogo"
+        >
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="hero__icon">
+        <div id="heroIcon" class="mktoImg" mktoName="Hero Icon">
           <img
-            src="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo-2024-2x.png"
-            alt="Info-Tech Research Group"
-            class="header__logo"
-            id="headerLogo"
-            class="mktoImg"
-            mktoName="Header Logo"
+            src="https://info.softwarereviews.com/rs/353-GFN-093/images/checkmark-3d.png"
+            alt=""
+            aria-hidden="true"
           >
-        </a>
-      </header>
-
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
         </div>
+      </div>
 
-        <h1 class="hero__headline">
-          <div id="headline" class="mktoText" mktoName="Headline">
-            Thank You!
-          </div>
-        </h1>
-
-        <p class="hero__subheadline">
-          <div id="subheadline" class="mktoText" mktoName="Subheadline">
-            We've received your request.
-          </div>
-        </p>
-
-        <div class="hero__message">
-          <div id="heroMessage" class="mktoText" mktoName="Hero Message">
-            <p>A member of our team will review your request and reach out to you as soon as possible. We typically respond within one business day.</p>
-          </div>
+      <h1 class="hero__headline">
+        <div id="headline" class="mktoText" mktoName="Headline">
+          We Got You.
         </div>
-      </section>
+      </h1>
 
-      <!-- What to Expect Section -->
-      <section class="expectations">
-        <div class="expectations__card">
-          <h2 class="expectations__title">
-            <div id="expectationsTitle" class="mktoText" mktoName="Expectations Title">
-              What Happens Next
-            </div>
-          </h2>
-
-          <ul class="expectations__list">
-            <li class="expectations__item">
-              <span class="expectations__number">1</span>
-              <div id="expectationsStep1" class="mktoText expectations__text" mktoName="Step 1">
-                Your request has been forwarded to the appropriate team member.
-              </div>
-            </li>
-            <li class="expectations__item">
-              <span class="expectations__number">2</span>
-              <div id="expectationsStep2" class="mktoText expectations__text" mktoName="Step 2">
-                They will review your information and prepare a personalized response.
-              </div>
-            </li>
-            <li class="expectations__item">
-              <span class="expectations__number">3</span>
-              <div id="expectationsStep3" class="mktoText expectations__text" mktoName="Step 3">
-                Expect to hear from us via email or phone within one business day.
-              </div>
-            </li>
-          </ul>
+      <div class="hero__message">
+        <div id="heroMessage" class="mktoText" mktoName="Message">
+          Thanks for your interest. Your request's in the queue and a member of our team will reach out soon.
         </div>
-      </section>
+      </div>
+    </main>
 
-      <!-- CTA Section -->
-      <section class="cta-section">
-        <p class="cta-section__text">
-          <div id="ctaMessage" class="mktoText" mktoName="CTA Message">
-            While you wait, explore our latest research and insights.
-          </div>
-        </p>
-        <a href="${ctaButtonUrl}" class="btn btn--primary" target="_blank" rel="noopener">
-          <span id="ctaButton" class="mktoText" mktoName="CTA Button Text">${ctaButtonText}</span>
-        </a>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="footer__social">
-          <a href="https://www.linkedin.com/company/softwarereviews/?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
-            <img src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-linkedin-2x.png" alt="LinkedIn" class="footer__social-icon">
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="https://www.infotech.com/?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener">
+            <img
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/ITRG-official-logo.svg"
+              alt="Info-Tech Research Group"
+              class="footer__logo"
+            >
           </a>
-          <a href="https://twitter.com/SW_Reviews?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener" class="footer__social-link" aria-label="X (Twitter)">
-            <img src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-x-2x.png" alt="X (Twitter)" class="footer__social-icon">
-          </a>
-          <a href="https://www.facebook.com/softwarereviewsITRG/?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
-            <img src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-facebook-2x.png" alt="Facebook" class="footer__social-icon">
+          <div class="footer__divider"></div>
+          <a href="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener">
+            <img
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/SR-offical-logo.png"
+              alt="SoftwareReviews"
+              class="footer__logo--sr"
+            >
           </a>
         </div>
-
-        <nav class="footer__links" aria-label="Footer Links">
-          <a href="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener">Home</a>
-          <span class="footer__divider" aria-hidden="true">|</span>
-          <a href="https://www.softwarereviews.com/privacy?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener">Privacy Policy</a>
-          <span class="footer__divider" aria-hidden="true">|</span>
-          <a href="https://www.softwarereviews.com/terms-and-conditions?utm_source=marketo&utm_medium=landing-page" target="_blank" rel="noopener">Terms of Use</a>
-        </nav>
 
         <div class="footer__copyright">
           <div id="footerCopyright" class="mktoText" mktoName="Footer Copyright">
-            <p>&copy; 1997 - ${copyrightYear} SoftwareReviews.</p>
-            <p>SoftwareReviews is a division of Info-Tech Research Group Inc. All rights reserved.</p>
-            <p>1225 South Clark Street, Suite 1310, Arlington, VA, USA 22202</p>
+            &copy; 1997 - ${copyrightYear} SoftwareReviews. SoftwareReviews is a division of<br>
+            Info-Tech Research Group Inc. All rights reserved.
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-    </main>
   </div>
 </body>
 </html>
