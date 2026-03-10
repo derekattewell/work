@@ -1,0 +1,415 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email Template v2 - Awards Simple Flat (MJML)</mj-title>
+
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#f5f5f5" />
+      <mj-section background-color="#f5f5f5" padding="0" />
+      <mj-column padding="0" />
+      <mj-text padding="0" />
+      <mj-image padding="0" />
+      <mj-button padding="0" />
+    </mj-attributes>
+
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" />
+
+    <mj-style>
+      @media only screen and (max-width:479px) {
+        .mobile-padding { padding: 24px 20px !important; }
+        .mobile-stack { display: block !important; width: 100% !important; }
+      }
+    </mj-style>
+
+    <mj-raw>
+      <!-- ==================== MARKETO VARIABLES ==================== -->
+
+      <!-- Global Variables -->
+      <meta id="copyright-year" class="mktoString" mktoname="Copyright year" default="2026">
+
+      <!-- Header Variables -->
+      <meta id="header__logo-href" class="mktoString" mktoname="Logo Link" default="https://www.infotech.com/?utm_source=marketo&utm_medium=email" mktomodulescope="true">
+
+      <!-- Card with Button Variables -->
+      <meta id="card-with-button__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
+      <meta id="card-with-button__button" class="mktoString" mktoname="Button Text" default="Get Started" mktomodulescope="true">
+
+      <!-- Award Info Module Variables -->
+      <meta id="award-info__award-type" class="mktoString" mktoname="Award Type" default="CHAMPION STATUS" mktomodulescope="true">
+      <meta id="award-info__button-href" class="mktoString" mktoname="Button Link" default="#" mktomodulescope="true">
+      <meta id="award-info__button" class="mktoString" mktoname="Button Text" default="Claim Your Award(s)" mktomodulescope="true">
+
+      <!-- Share Section Variables -->
+      <meta id="share__linkedin-href" class="mktoString" mktoname="LinkedIn Share Link" default="https://www.linkedin.com/sharing/share-offsite/?url=" mktomodulescope="true">
+      <meta id="share__x-href" class="mktoString" mktoname="X (Twitter) Share Link" default="https://twitter.com/intent/tweet?url=" mktomodulescope="true">
+      <meta id="share__facebook-href" class="mktoString" mktoname="Facebook Share Link" default="https://www.facebook.com/sharer/sharer.php?u=" mktomodulescope="true">
+    </mj-raw>
+  </mj-head>
+
+  <mj-body background-color="#f5f5f5" width="600px">
+
+    <!-- Wrapper to constrain width -->
+    <mj-wrapper background-color="#f5f5f5" padding="32px 0">
+
+      <!-- ==================== HEADER ==================== -->
+      <mj-section css-class="mktoModule" padding="28px 48px 12px 48px">
+        <mj-column>
+          <mj-image
+            src="https://info.softwarereviews.com/rs/353-GFN-093/images/itrg-logo-2024-2x.png"
+            alt="Info-Tech Research Group"
+            width="120px"
+            align="center"
+            href="${header__logo-href}"
+            padding="0"
+          />
+        </mj-column>
+      </mj-section>
+
+      <!-- ==================== SPACER - Header Spacer ==================== -->
+      <mj-section padding="18px 0">
+        <mj-column>
+          <mj-spacer height="0px" />
+        </mj-column>
+      </mj-section>
+
+      <!-- ==================== AWARD INFO ==================== -->
+      <mj-section padding="0 32px">
+        <mj-column padding="0" background-color="#0F2B59" border-radius="200px 200px 20px 20px">
+
+          <!-- Award Badge -->
+          <mj-image
+            src="https://info.softwarereviews.com/rs/353-GFN-093/images/2026%20DQ%20Champion.png"
+            alt="Award Badge"
+            width="280px"
+            align="center"
+            padding="48px 40px 24px 40px"
+            css-class="mktoImg"
+          />
+
+          <!-- Company Name -->
+          <mj-text
+            align="center"
+            padding="0 40px 8px 40px"
+            font-family="Montserrat, Helvetica, Arial, sans-serif"
+            font-size="48px"
+            font-weight="700"
+            line-height="1.1"
+            color="#ffffff"
+          >
+            <div style="text-transform:uppercase">{{company.Company Name}}</div>
+          </mj-text>
+
+          <!-- Award Type -->
+          <mj-text
+            align="center"
+            padding="0 40px 24px 40px"
+            font-family="Montserrat, Helvetica, Arial, sans-serif"
+            font-size="28px"
+            font-weight="800"
+            line-height="1.2"
+            color="#66C3D5"
+          >
+            <div style="letter-spacing:0.05em">${award-info__award-type}</div>
+          </mj-text>
+
+          <!-- Body Text -->
+          <mj-text
+            align="center"
+            padding="0 60px 24px 60px"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            font-size="15px"
+            font-weight="300"
+            line-height="1.5"
+            color="#ffffff"
+            css-class="mktoText"
+          >
+            We are thrilled to announce that your software has been recognized as a Champion by Info-Tech Research Group, powered by SoftwareReviews. This prestigious award celebrates excellence in product features and functionality, a testament to your commitment to quality and innovation.
+          </mj-text>
+
+          <!-- Dynamic Stats Line -->
+          <mj-text
+            align="center"
+            padding="0 40px 32px 40px"
+            font-family="Montserrat, Helvetica, Arial, sans-serif"
+            font-size="20px"
+            font-weight="500"
+            line-height="1.4"
+            color="#66C3D5"
+          >
+            In <span style="color:#ffffff">$date.format('MMMM', $date.calendar.time)</span>, <span style="color:#ffffff">{{company.Company Name}}</span> has <span style="color:#ffffff">{{company.Offerings Awarded in Last Month}}</span> product(s)<br>in <span style="color:#ffffff">{{company.Categories Awarded in Last Month}}</span> categories winning:
+          </mj-text>
+
+          <!-- Three Stats Columns -->
+          <mj-text padding="0 40px 40px 40px">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+              <tbody>
+                <tr>
+                  <!-- Champion Awards -->
+                  <td align="center" style="width:33.33%;vertical-align:top">
+                    <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#ffffff">
+                      {{company.Champion Awards in Last Month:default=-}}
+                    </div>
+                    <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#66C3D5;padding-top:8px">
+                      Champion<br>Award(s)
+                    </div>
+                  </td>
+                  <!-- Leader Awards -->
+                  <td align="center" style="width:33.33%;vertical-align:top">
+                    <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#ffffff">
+                      {{company.Leader Awards in Last Month:default=-}}
+                    </div>
+                    <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#66C3D5;padding-top:8px">
+                      Leader<br>Award(s)
+                    </div>
+                  </td>
+                  <!-- Other Awards -->
+                  <td align="center" style="width:33.33%;vertical-align:top">
+                    <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:56px;font-weight:700;line-height:1;text-align:center;color:#ffffff">
+                      {{company.Other Awards in Last Month:default=-}}
+                    </div>
+                    <div style="font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.3;text-align:center;color:#66C3D5;padding-top:8px">
+                      Secondary<br>Award(s)
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </mj-text>
+
+          <!-- CTA Button -->
+          <mj-button
+            href="${award-info__button-href}"
+            background-color="#66C3D5"
+            color="#ffffff"
+            font-family="Montserrat, Helvetica, Arial, sans-serif"
+            font-size="16px"
+            font-weight="600"
+            line-height="1"
+            border-radius="50px"
+            inner-padding="14px 32px"
+            padding="0 40px 48px 40px"
+            align="center"
+          >
+            ${award-info__button}
+          </mj-button>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- ==================== SPACER ==================== -->
+      <mj-section padding="16px 0">
+        <mj-column>
+          <mj-spacer height="0px" />
+        </mj-column>
+      </mj-section>
+
+      <!-- ==================== FLOATING CARD WITH BUTTON ==================== -->
+      <mj-section padding="10px 32px">
+        <mj-column background-color="#ffffff" border-radius="20px" padding="36px 40px">
+
+          <mj-text
+            align="left"
+            padding="0 0 16px 0"
+            font-family="Montserrat, Helvetica, Arial, sans-serif"
+            font-size="20px"
+            font-weight="500"
+            line-height="1.35"
+            color="#111827"
+            css-class="mktoText"
+          >
+            Card with Call to Action
+          </mj-text>
+
+          <mj-text
+            align="left"
+            padding="0 0 32px 0"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            font-size="15px"
+            font-weight="300"
+            line-height="1.7"
+            color="#374151"
+          >
+            This card includes a prominent pill-shaped button. Perfect for driving conversions and engagement with your content.
+          </mj-text>
+
+          <mj-button
+            href="${card-with-button__button-href}"
+            background-color="#216aa5"
+            color="#ffffff"
+            font-family="Montserrat, Helvetica, Arial, sans-serif"
+            font-size="14px"
+            font-weight="600"
+            line-height="1"
+            border-radius="50px"
+            inner-padding="12px 24px"
+            padding="0"
+            align="left"
+          >
+            ${card-with-button__button}
+          </mj-button>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- ==================== SPACER ==================== -->
+      <mj-section padding="6px 0">
+        <mj-column>
+          <mj-spacer height="0px" />
+        </mj-column>
+      </mj-section>
+
+      <!-- ==================== SHARE YOUR ACCOMPLISHMENT ==================== -->
+      <mj-section padding="10px 32px">
+        <mj-column background-color="#ffffff" border-radius="20px" padding="36px 40px">
+
+          <mj-text
+            align="center"
+            padding="0 0 12px 0"
+            font-family="Montserrat, Helvetica, Arial, sans-serif"
+            font-size="20px"
+            font-weight="500"
+            line-height="1.35"
+            color="#111827"
+          >
+            Share Your Accomplishment
+          </mj-text>
+
+          <mj-text
+            align="center"
+            padding="0 20px 24px 20px"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            font-size="15px"
+            font-weight="300"
+            line-height="1.7"
+            color="#374151"
+            css-class="mktoText"
+          >
+            Share your recognition with the world! Click below to post about your award on social media and let your network know about your achievement.
+          </mj-text>
+
+          <!-- Social Share Buttons -->
+          <mj-social
+            mode="horizontal"
+            icon-size="40px"
+            icon-padding="0 12px"
+            padding="0"
+            align="center"
+          >
+            <mj-social-element
+              name="linkedin-noshare"
+              href="${share__linkedin-href}"
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-linkedin-2x.png"
+              alt="Share on LinkedIn"
+              background-color="#0A66C2"
+              border-radius="50px"
+            />
+            <mj-social-element
+              name="x-noshare"
+              href="${share__x-href}"
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-x-2x.png"
+              alt="Share on X"
+              background-color="#000000"
+              border-radius="50px"
+            />
+            <mj-social-element
+              name="facebook-noshare"
+              href="${share__facebook-href}"
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-facebook-2x.png"
+              alt="Share on Facebook"
+              background-color="#1877F2"
+              border-radius="50px"
+            />
+          </mj-social>
+
+        </mj-column>
+      </mj-section>
+
+      <!-- ==================== FOOTER ==================== -->
+      <mj-section padding="40px 48px">
+        <mj-column>
+
+          <!-- Social Icons -->
+          <mj-social
+            mode="horizontal"
+            icon-size="28px"
+            icon-padding="0 16px"
+            padding="0 0 24px 0"
+            align="center"
+          >
+            <mj-social-element
+              name="linkedin-noshare"
+              href="https://www.linkedin.com/company/softwarereviews/?utm_source=marketo&utm_medium=email"
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-linkedin-2x.png"
+              alt="LinkedIn"
+              background-color="transparent"
+              border-radius="0"
+            />
+            <mj-social-element
+              name="x-noshare"
+              href="https://twitter.com/SW_Reviews?utm_source=marketo&utm_medium=email"
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-x-2x.png"
+              alt="X (Twitter)"
+              background-color="transparent"
+              border-radius="0"
+            />
+            <mj-social-element
+              name="facebook-noshare"
+              href="https://www.facebook.com/softwarereviewsITRG/?utm_source=marketo&utm_medium=email"
+              src="https://info.softwarereviews.com/rs/353-GFN-093/images/social-facebook-2x.png"
+              alt="Facebook"
+              background-color="transparent"
+              border-radius="0"
+            />
+          </mj-social>
+
+          <!-- Footer Links -->
+          <mj-text
+            align="center"
+            padding="0 0 24px 0"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            font-size="12px"
+            font-weight="400"
+            line-height="1.5"
+            color="#9CA3AF"
+          >
+            <a href="https://www.softwarereviews.com/?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Home</a>
+            <span aria-hidden="true" style="padding:0 8px;color:#E5E7EB">|</span>
+            <a href="https://www.softwarereviews.com/privacy?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Privacy Policy</a>
+            <span aria-hidden="true" style="padding:0 8px;color:#E5E7EB">|</span>
+            <a href="https://www.softwarereviews.com/terms-and-conditions?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Terms of Use</a>
+            <span aria-hidden="true" style="padding:0 8px;color:#E5E7EB">|</span>
+            <a href="https://info.softwarereviews.com/Preference-Center.html?utm_source=marketo&utm_medium=email" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Email Preferences</a>
+            <span aria-hidden="true" style="padding:0 8px;color:#E5E7EB">|</span>
+            <a href="{{system.unsubscribeLink}}" style="color:#9CA3AF;text-decoration:underline" target="_blank" rel="noopener">Unsubscribe</a>
+          </mj-text>
+
+          <!-- Copyright -->
+          <mj-text
+            align="center"
+            padding="0"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            font-size="12px"
+            font-weight="400"
+            line-height="1.6"
+            color="#9CA3AF"
+            css-class="mktoText"
+          >
+            <p style="margin:0 0 8px 0">
+              &copy; 1997 - ${copyright-year} SoftwareReviews.
+            </p>
+            <p style="margin:0 0 8px 0">
+              SoftwareReviews is a division of Info-Tech Research Group Inc. All rights reserved.
+            </p>
+            <p style="margin:0">
+              1225 South Clark Street, Suite 1310, Arlington, VA, USA 22202
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>
